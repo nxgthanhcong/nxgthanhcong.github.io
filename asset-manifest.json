@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.d1c25f4b.js",
+    "main.css": "/static/css/main.19adfd52.css",
+    "main.js": "/static/js/main.29c4fd30.js",
     "static/js/787.59f79936.chunk.js": "/static/js/787.59f79936.chunk.js",
+    "static/media/SFMono-Regular.woff2": "/static/media/SFMono-Regular.8799e6387338d58f2f13.woff2",
+    "static/media/Calibre-Semibold.woff2": "/static/media/Calibre-Semibold.94fc73852539d6733dc0.woff2",
+    "static/media/Calibre-Regular.woff2": "/static/media/Calibre-Regular.b0d4cbb1201155ddccc2.woff2",
+    "static/media/Calibre-Medium.woff2": "/static/media/Calibre-Medium.568dce56f869a519a015.woff2",
     "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.d1c25f4b.js.map": "/static/js/main.d1c25f4b.js.map",
+    "main.19adfd52.css.map": "/static/css/main.19adfd52.css.map",
+    "main.29c4fd30.js.map": "/static/js/main.29c4fd30.js.map",
     "787.59f79936.chunk.js.map": "/static/js/787.59f79936.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.d1c25f4b.js"
+    "static/css/main.19adfd52.css",
+    "static/js/main.29c4fd30.js"
   ]
 }
