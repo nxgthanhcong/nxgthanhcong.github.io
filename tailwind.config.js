@@ -9,8 +9,13 @@ module.exports = {
       },
       colors: {
         customBackgroud: "rgb(1 20 36 / 1)",
-        customBlue: "#0000ff",
-        // Add more custom colors as needed
+        hoverBackground: "rgba(255,255,255,0.1)",
+      },
+      boxShadow: {
+        hoverShadow: "-1px_1px_10px_4px_rgba(0,0,0,0.02)",
+      },
+      borderColor: {
+        hoverBorder: "rgba(255,255,255,0.1)",
       },
     },
   },

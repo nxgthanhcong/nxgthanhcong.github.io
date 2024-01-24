@@ -1,3 +1,6 @@
 export {default as SocialList} from './social-list'
 export {default as Navigation} from './navigation'
 export {default as Introduce} from './introduce'
+export {default as About} from './about'
+export {default as Experiences} from './experiences'
+export {default as SectionTitle} from './section-title'
