@@ -1,5 +1,5 @@
 import React from "react";
-import { SectionTitle } from "..";
+import { SectionTitle } from "../components";
 
 const About = () => {
   return (

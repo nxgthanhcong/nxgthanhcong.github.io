@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import { experienceDataItems } from "../../constants/fake";
-import ViewMore from "../view-more";
-import TagList from "./tag-list";
-import LinkList from "./link-list";
-import Title from "./title";
-import { SectionTitle } from "..";
+import { LinkList, SectionTitle, TagList, ViewMore } from "../components";
+import { experienceDataItems } from "../constants/fake";
+import { TwoOClockArrowIcon } from "../assets/icons";
 
 const Experiences = () => {
   const [activedIndex, setActivedIndex] = useState(-1);
@@ -15,12 +12,13 @@ const Experiences = () => {
       <ul id="experience-list">
         {experienceDataItems.map((item, index) => (
           <li
+            key={index}
             className={
               `hightlight-item group grid lg:grid-cols-8 mb-12 lg:mb-4 gap-x-8 rounded-md lg:p-4 duration-200 
-            hover:bg-hoverBackground 
-            hover:shadow-hoverShadow 
-            hover:border-t 
-            hover:border-hoverBorder ` +
+                lg:hover:bg-hoverBackground 
+                lg:hover:shadow-hoverShadow 
+                lg:hover:border-t 
+                lg:hover:border-hoverBorder ` +
               (activedIndex === -1 || index === activedIndex
                 ? "opacity-100"
                 : "opacity-50")
@@ -34,7 +32,10 @@ const Experiences = () => {
               </h3>
             </div>
             <div className="lg:col-span-6">
-              <Title item={item} />
+              <h5 className="text-xl font-medium text-slate-200">
+                {item.position} - {item.company}
+                <TwoOClockArrowIcon className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
+              </h5>
               <h6 className="text-lg font-medium text-slate-500">Coder</h6>
               <p className="mt-3 text-lg leading-5 text-slate-400">
                 {"" + item.description}
@@ -45,7 +46,7 @@ const Experiences = () => {
           </li>
         ))}
       </ul>
-      <ViewMore url="/" />
+      <ViewMore url="/" title="View full résume1" />
     </div>
   );
 };
