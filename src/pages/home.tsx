@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, SocialList } from "../components";
+import { Container, Navigation, SocialList } from "../components";
 import {
   AboutSection,
   BlogsSection,
@@ -9,9 +9,9 @@ import {
   ProjectsSection,
 } from "../sections";
 
-export const Home = () => {
+const Home = () => {
   return (
-    <div className="mx-auto max-w-screen-xl grid lg:grid-cols-2 gap-2">
+    <Container girdColVariant="lg:grid-cols-2">
       <header className="grid content-between max-h-screen lg:sticky lg:top-0 py-12 lg:py-24">
         <div>
           <IntroduceSection />
@@ -26,6 +26,8 @@ export const Home = () => {
         <BlogsSection />
         <IngredientSection />
       </div>
-    </div>
+    </Container>
   );
 };
+
+export default Home;

@@ -5,7 +5,7 @@ import { Cursor } from "./components";
 function App() {
   return (
     <>
-      <div className="bg-customBackgroud font-calibre px-6">
+      <div className="bg-customBackgroud font-calibre px-6 min-h-screen">
         <RouterProvider router={router} />
       </div>
       <Cursor />
