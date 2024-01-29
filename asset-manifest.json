@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.795580ed.css",
-    "main.js": "/static/js/main.f6e2b83b.js",
+    "main.css": "/static/css/main.9f397608.css",
+    "main.js": "/static/js/main.0c5f40da.js",
     "static/js/787.59f79936.chunk.js": "/static/js/787.59f79936.chunk.js",
     "static/media/SFMono-Regular.woff2": "/static/media/SFMono-Regular.8799e6387338d58f2f13.woff2",
     "static/media/Calibre-Semibold.woff2": "/static/media/Calibre-Semibold.94fc73852539d6733dc0.woff2",
@@ -10,12 +10,12 @@
     "index.html": "/index.html",
     "static/media/9oclock-arrow-icon.svg": "/static/media/9oclock-arrow-icon.9315c628273a20a8ee9c4c8917a57c6e.svg",
     "static/media/2oclock-arrow-icon.svg": "/static/media/2oclock-arrow-icon.3b0fa3a89f7cce1b0deb387493c4eaed.svg",
-    "main.795580ed.css.map": "/static/css/main.795580ed.css.map",
-    "main.f6e2b83b.js.map": "/static/js/main.f6e2b83b.js.map",
+    "main.9f397608.css.map": "/static/css/main.9f397608.css.map",
+    "main.0c5f40da.js.map": "/static/js/main.0c5f40da.js.map",
     "787.59f79936.chunk.js.map": "/static/js/787.59f79936.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.795580ed.css",
-    "static/js/main.f6e2b83b.js"
+    "static/css/main.9f397608.css",
+    "static/js/main.0c5f40da.js"
   ]
 }
