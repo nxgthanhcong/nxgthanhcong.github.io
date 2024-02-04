@@ -1,6 +1,7 @@
 import { RouterProvider } from "react-router-dom";
-import router from "./routes.tsx";
+import router from "./routes";
 import { Cursor } from "./components";
+import React from "react";
 
 function App() {
   return (
