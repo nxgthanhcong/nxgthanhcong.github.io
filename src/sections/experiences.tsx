@@ -1,13 +1,33 @@
-import React, { useState } from "react";
-import { LinkList, SectionTitle, TagList, ViewMore } from "../components";
-import { experienceDataItems } from "../constants/fake";
+import React, { useRef, useState } from "react";
 import { TwoOClockArrowIcon } from "../assets/icons";
+import { LinkList, SectionTitle, TagList, ViewMore } from "../components";
+import { useIsActiveNavigationHook } from "../hooks";
+import { useExperiencesQuery } from "../stores/services/portfolio-api";
 
 const Experiences = () => {
   const [activedIndex, setActivedIndex] = useState(-1);
+  const { isLoading, isUninitialized, isError, data } = useExperiencesQuery();
+
+  const ref = useRef(null);
+  useIsActiveNavigationHook(ref, data != null);
+
+  if (isUninitialized || isLoading) {
+    return <span>loading...</span>;
+  }
+
+  if (isError) {
+    return <span>some thing went wrong</span>;
+  }
+
+  const experienceDataItems = data;
 
   return (
-    <div id="experiences" data-item="experiences" className="v2-section mt-32">
+    <div
+      ref={ref}
+      id="experiences"
+      data-item="experiences"
+      className="v2-section mt-32"
+    >
       <SectionTitle title="EXPERIENCES" />
       <ul id="experience-list">
         {experienceDataItems.map((item, index) => (

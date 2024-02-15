@@ -7,12 +7,11 @@ const LinkList = ({ items }: { items: any }) => {
       {items &&
         items.map(
           ({ title, icon }: { title: string; icon: string }, index: number) => (
-            <li
-              key={index}
-              className="text-slate-400 text-base font-medium flex flex-wrap gap-x-[2px] items-center"
-            >
-              <span>{parse(icon)}</span>
-              <span>{title}</span>
+            <li key={index} className="text-slate-400 text-base font-medium">
+              <a href="/" className="flex flex-wrap gap-x-[2px] items-center">
+                <span>{parse(icon)}</span>
+                <span>{title}</span>
+              </a>
             </li>
           )
         )}

@@ -1,13 +1,37 @@
-import React, { useState } from "react";
-import { projectDataItems } from "../constants/fake";
+import React, { useRef, useState } from "react";
 import { TwoOClockArrowIcon } from "../assets/icons";
 import { LinkList, TagList, ViewMore } from "../components";
+import { useProjectsQuery } from "../stores/services/portfolio-api";
+import { useIsActiveNavigationHook } from "../hooks";
 
 const Projects = () => {
   const [activedIndex, setActivedIndex] = useState(-1);
 
+  const { isLoading, isUninitialized, isError, data } = useProjectsQuery({
+    page: 1,
+    limit: 2,
+  });
+
+  const ref = useRef(null);
+  useIsActiveNavigationHook(ref, data != null);
+
+  if (isUninitialized || isLoading) {
+    return <span>loading...</span>;
+  }
+
+  if (isError) {
+    return <span>some thing went wrong</span>;
+  }
+
+  const projectDataItems = data;
+
   return (
-    <div id="projects" data-item="projects" className="v2-section mt-32">
+    <div
+      ref={ref}
+      id="projects"
+      data-item="projects"
+      className="v2-section mt-32"
+    >
       <h1 className="section__title">Projects</h1>
       <ul id="project-list">
         {projectDataItems.map((item, index) => (
@@ -38,7 +62,7 @@ const Projects = () => {
               <p className="mt-3 text-lg leading-5 text-slate-400">
                 {item.description}
               </p>
-              <LinkList items={item.awards} />
+              <LinkList items={item.links} />
               <TagList items={item.tags} />
             </div>
           </li>

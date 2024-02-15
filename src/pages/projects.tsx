@@ -1,8 +1,24 @@
 import React from "react";
 import { Container, TagList, ViewMore } from "../components";
 import { TwoOClockArrowIcon } from "../assets/icons";
+import { useProjectsQuery } from "../stores/services/portfolio-api";
 
 const Projects = () => {
+  const { isLoading, isUninitialized, isError, data } = useProjectsQuery({
+    page: 1,
+    limit: 2,
+  });
+
+  if (isUninitialized || isLoading) {
+    return <span>loading...</span>;
+  }
+
+  if (isError) {
+    return <span>some thing went wrong</span>;
+  }
+
+  const projectDataItems = data;
+
   return (
     <Container girdColVariant="lg:grid-cols-1">
       <div className="py-12 lg:py-24">
@@ -29,29 +45,29 @@ const Projects = () => {
             </tr>
           </thead>
           <tbody>
-            <tr className="border-b border-slate-300/10 last:border-none">
-              <td className="text-lg text-slate-400 py-6">2023</td>
-              <td className="text-lg text-slate-200 font-semibold">
-                Emerson Collective
-              </td>
-              <td className="hidden lg:table-cell text-lg text-slate-400">
-                Upstatement
-              </td>
-              <td className="hidden lg:table-cell">
-                <TagList
-                  items={[
-                    { title: "item1", link: "link1" },
-                    { title: "item2", link: "link2" },
-                  ]}
-                />
-              </td>
-              <td className="text-lg text-slate-400">
-                <span className="group flex cursor-pointer hover:text-slate-200 font-medium">
-                  emersoncollective.com
-                  <TwoOClockArrowIcon className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
-                </span>
-              </td>
-            </tr>
+            {projectDataItems.map((item, index) => (
+              <tr
+                key={index}
+                className="border-b border-slate-300/10 last:border-none"
+              >
+                <td className="text-lg text-slate-400 py-6">{item.year}</td>
+                <td className="text-lg text-slate-200 font-semibold">
+                  {item.title}
+                </td>
+                <td className="hidden lg:table-cell text-lg text-slate-400">
+                  {item.madeAt}
+                </td>
+                <td className="hidden lg:table-cell">
+                  <TagList items={item.tags} />
+                </td>
+                <td className="text-lg text-slate-400">
+                  <span className="group flex cursor-pointer hover:text-slate-200 font-medium">
+                    emersoncollective.com
+                    <TwoOClockArrowIcon className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
+                  </span>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

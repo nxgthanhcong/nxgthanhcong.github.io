@@ -1,10 +1,25 @@
 import React, { useState } from "react";
-import { ViewMore } from "../components";
-import { blogDataItems } from "../constants/fake";
 import { TwoOClockArrowIcon } from "../assets/icons";
+import { ViewMore } from "../components";
+import { useBlogsQuery } from "../stores/services/portfolio-api";
 
 const BlogsSection = () => {
   const [activedIndex, setActivedIndex] = useState(-1);
+
+  const { isLoading, isUninitialized, isError, data } = useBlogsQuery({
+    page: 1,
+    limit: 2,
+  });
+
+  if (isUninitialized || isLoading) {
+    return <span>loading...</span>;
+  }
+
+  if (isError) {
+    return <span>some thing went wrong</span>;
+  }
+
+  const blogDataItems = data;
 
   return (
     <div className="mt-32">

@@ -1,47 +1,14 @@
 import React, { useEffect, useMemo, useState } from "react";
 import "./navigation.css";
+import { useSelector } from "react-redux";
+import { RootState } from "../../stores";
 
 const Navigation = () => {
-  const [activedItem, setActivesItem] = useState();
-
+  const [activedItem, setActivesItem] = useState<string>();
+  const appState = useSelector((state: RootState) => state.app);
   useEffect(() => {
-    // define an observer instance
-    var observer = new IntersectionObserver(onIntersection, {
-      root: null, // default is the viewport
-      threshold: 0.5, // percentage of target's visible area. Triggers "onIntersection"
-    });
-
-    // callback is called on intersection change
-    function onIntersection(entries: any, opts: any) {
-      entries.forEach((entry: any) => {
-        if (entry.isIntersecting) {
-          const sectionInView = entry.target.getAttribute("data-item");
-          setActivesItem(sectionInView);
-        }
-      });
-    }
-
-    const listFlagElements = [
-      document.querySelector("#about.v2-section"),
-      document.querySelector("#experiences.v2-section"),
-      document.querySelector("#projects.v2-section"),
-    ];
-
-    // Use the observer to observe an element
-    listFlagElements.forEach((el) => {
-      if (el) {
-        observer.observe(el);
-      }
-    });
-
-    return () => {
-      listFlagElements.forEach((el) => {
-        if (el) {
-          observer.unobserve(el);
-        }
-      });
-    };
-  }, []);
+    setActivesItem(appState.activedNavigationItem.toLocaleLowerCase());
+  }, [appState.activedNavigationItem]);
 
   const navigationItems = useMemo(() => {
     return [
