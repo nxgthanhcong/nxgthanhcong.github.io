@@ -1,15 +1,14 @@
-#Stage 1
-FROM node:19-alpine as builder
-WORKDIR /app
-COPY package*.json .
-COPY yarn*.lock .
-RUN yarn install
-COPY . .
-RUN yarn build
+# Use a lightweight web server image
+FROM nginx:alpine
 
-#Stage 2
-FROM nginx:1.19.0
+# Set the working directory inside the container
 WORKDIR /usr/share/nginx/html
-RUN rm -rf ./*
-COPY --from=builder /app/build .
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+
+# Copy the build folder from the local machine to the container
+COPY build .
+
+# Copy the custom Nginx configuration file
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Expose port 4000
+EXPOSE 4000
