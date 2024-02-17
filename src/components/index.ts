@@ -1,8 +1,0 @@
-export {default as SocialList} from './social-list'
-export {default as Navigation} from './navigation'
-export {default as SectionTitle} from './section-title'
-export {default as Cursor} from './cursor'
-export {default as LinkList} from './link-list'
-export {default as TagList} from './tag-list'
-export {default as ViewMore} from './view-more'
-export {default as Container} from './container'
