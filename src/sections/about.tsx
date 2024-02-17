@@ -25,6 +25,7 @@ const About = () => {
     <div ref={ref} id="about" data-item="about" className="v2-section about">
       <SectionTitle title="ABOUT" />
       {parse(content)}
+      <div className="mb-4 text-xl text-slate-400 hidden"></div>
     </div>
   );
 };
