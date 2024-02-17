@@ -1,5 +1,5 @@
 import React from "react";
-import { useCurrentJobInfomationQuery } from "../stores/services/portfolio-api";
+import { useCurrentJobInfomationQuery } from "../stores/services/github-portfolio-api";
 
 const Introduce = () => {
   const { isLoading, isUninitialized, isError, data } =

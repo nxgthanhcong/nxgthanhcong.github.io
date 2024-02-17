@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { TwoOClockArrowIcon } from "../assets/icons";
 import { LinkList, SectionTitle, TagList, ViewMore } from "../components";
 import { useIsActiveNavigationHook } from "../hooks";
-import { useExperiencesQuery } from "../stores/services/portfolio-api";
+import { useExperiencesQuery } from "../stores/services/github-portfolio-api";
 
 const Experiences = () => {
   const [activedIndex, setActivedIndex] = useState(-1);

@@ -1,7 +1,7 @@
 import parse from "html-react-parser";
 import React, { useRef } from "react";
 import { SectionTitle } from "../components";
-import { useAboutInfomationQuery } from "../stores/services/portfolio-api";
+import { useAboutInfomationQuery } from "../stores/services/github-portfolio-api";
 import { useIsActiveNavigationHook } from "../hooks";
 
 const About = () => {

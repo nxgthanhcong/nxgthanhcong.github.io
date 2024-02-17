@@ -13,33 +13,29 @@ const api = createApi({
   baseQuery,
   endpoints: (build) => ({
     currentJobInfomation: build.query<ICurrentJobInfomation, void>({
-      query: () => `current-job-infomation.json`,
+      query: () => `get-current-job-infomation.json`,
     }),
     aboutInfomation: build.query<IAboutInfomation, void>({
-      query: () => `about-infomation`,
-      transformResponse,
+      query: () => `get-about-infomation.json`,
     }),
     experiences: build.query<IExperience[], void>({
-      query: () => `experiences`,
-      transformResponse,
+      query: () => `get-experiences.json`,
     }),
     projects: build.query<IProject[], { page: number; limit: number }>({
       query: ({ page, limit }) => {
         return {
-          url: `projects`,
+          url: `get-projects.json`,
           params: {
             page,
             limit,
           },
         };
       },
-
-      transformResponse,
     }),
     blogs: build.query<IBlog[], { page: number; limit: number }>({
       query: ({ page, limit }) => {
         return {
-          url: `blogs`,
+          url: `get-blogs.json`,
           params: {
             page,
             limit,

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TwoOClockArrowIcon } from "../assets/icons";
 import { ViewMore } from "../components";
-import { useBlogsQuery } from "../stores/services/portfolio-api";
+import { useBlogsQuery } from "../stores/services/github-portfolio-api";
 
 const BlogsSection = () => {
   const [activedIndex, setActivedIndex] = useState(-1);

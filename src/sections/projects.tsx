@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { TwoOClockArrowIcon } from "../assets/icons";
 import { LinkList, TagList, ViewMore } from "../components";
-import { useProjectsQuery } from "../stores/services/portfolio-api";
+import { useProjectsQuery } from "../stores/services/github-portfolio-api";
 import { useIsActiveNavigationHook } from "../hooks";
 
 const Projects = () => {
