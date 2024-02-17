@@ -1,0 +1,64 @@
+[
+    {
+      "year": 2022,
+      "imgUrl": "./assets/images/spotify.webp",
+      "title": "UI Engineer Co-op",
+      "madeAt": "Fpt Telecom",
+      "href": "/",
+      "description": "When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds K o r o k s e e d s .",
+      "links": [
+        {
+          "icon": "\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" class=\"mr-1 h-4 w-4\" aria-hidden=\"true\"><path d=\"M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z\"></path><path d=\"M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z\"></path></svg>\n                ",
+          "title": "200+ Installs"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "imgUrl": "./assets/images/spotify-profile.webp",
+      "title": "UI Engineer Co-op",
+      "madeAt": "Fpt Telecom",
+      "href": "/",
+      "description": "When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds K o r o k s e e d s .",
+      "links": [
+        {
+          "icon": "\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" class=\"mr-1 h-3 w-3\" aria-hidden=\"true\"><path fill-rule=\"evenodd\" d=\"M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z\" clip-rule=\"evenodd\"></path></svg>\n                ",
+          "title": "200"
+        },
+        {
+          "icon": "\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" class=\"mr-1 h-4 w-4\" aria-hidden=\"true\"><path d=\"M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z\"></path><path d=\"M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z\"></path></svg>\n                ",
+          "title": "200+ Installs"
+        }
+      ],
+      "tags": [
+        {
+          "title": "Asp.net"
+        },
+        {
+          "title": "Asp.netcore"
+        },
+        {
+          "title": "SqlServer"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "imgUrl": "./assets/images/halcyon.webp",
+      "title": "UI Engineer Co-op",
+      "madeAt": "Fpt Telecom",
+      "href": "/",
+      "description": "When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and abc.",
+      "tags": [
+        {
+          "title": "Asp.net"
+        },
+        {
+          "title": "Asp.netcore"
+        },
+        {
+          "title": "SqlServer"
+        }
+      ]
+    }
+  ]
