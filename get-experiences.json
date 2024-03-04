@@ -1,7 +1,14 @@
 [
     {
-      "startDate": "Mar 2022",
+      "startDate": "Nov 2023",
       "endDate": "Present",
+      "position": "Software Engineer",
+      "company": "VietCredit",
+      "description": "I focused on developing integrated modules for the internal system, API services, and database operations.",
+    },
+    {
+      "startDate": "Mar 2022",
+      "endDate": "Sep 2023",
       "position": "Backend developer",
       "company": "FptTelecom",
       "description": "I focused on developing integrated modules for the internal system, seamlessly bridging interfaces, API services, and database operations. Directly engaging with users, I meticulously planned my processes, prioritizing ease of maintenance, scalability. My role involved working across various layers of the system, ensuring a smooth flow from frontend to backend functionalities.",
