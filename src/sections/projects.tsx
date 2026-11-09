@@ -1,6 +1,11 @@
 import React, { useRef, useState } from "react";
-import { TwoOClockArrowIcon } from "../assets/icons";
-import { LinkList, TagList, ViewMore } from "../components";
+import {
+  ItemTitle,
+  LinkList,
+  SectionTitle,
+  TagList,
+  ViewMore,
+} from "../components";
 import { useProjectsQuery } from "../stores/services/github-portfolio-api";
 import { useIsActiveNavigationHook } from "../hooks";
 
@@ -32,7 +37,7 @@ const Projects = () => {
       data-item="projects"
       className="v2-section mt-32"
     >
-      <h1 className="section__title">Projects</h1>
+      <SectionTitle title="PROJECTS" />
       <ul id="project-list">
         {projectDataItems.map((item, index) => (
           <li
@@ -55,10 +60,7 @@ const Projects = () => {
               />
             </div>
             <div className="col-span-6 -order-1 lg:order-none">
-              <h5 className="text-xl font-medium text-slate-200">
-                {item.title}
-                <TwoOClockArrowIcon className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
-              </h5>
+              <ItemTitle title={item.title} href={item.href} />
               <p className="mt-3 text-lg leading-5 text-slate-400">
                 {item.description}
               </p>

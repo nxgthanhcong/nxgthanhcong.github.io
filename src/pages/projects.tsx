@@ -2,17 +2,7 @@ import React from "react";
 import { Container, TagList, ViewMore } from "../components";
 import { TwoOClockArrowIcon } from "../assets/icons";
 import { useProjectsQuery } from "../stores/services/github-portfolio-api";
-
-// Hostname of an absolute http(s) URL ("https://www.foo.com/x" -> "foo.com"),
-// or null for relative/empty links such as "/".
-export const getExternalHostname = (href?: string): string | null => {
-  if (!href || !/^https?:\/\//i.test(href)) return null;
-  try {
-    return new URL(href).hostname.replace(/^www\./, "");
-  } catch {
-    return null;
-  }
-};
+import { getExternalHostname } from "../utils/url";
 
 const Projects = () => {
   const { isLoading, isUninitialized, isError, data } = useProjectsQuery({

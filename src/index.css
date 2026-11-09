@@ -5,7 +5,7 @@
 /* ==================== CUSTOM ================= */
 @layer components {
   .section__title {
-    @apply sticky top-0 mb-8 flex h-12 items-center bg-customBackgroud font-semibold uppercase tracking-widest text-slate-200 backdrop-blur lg:hidden;
+    @apply sticky top-0 mb-8 flex h-12 items-center bg-customBackgroud font-semibold uppercase tracking-widest text-slate-200 backdrop-blur;
   }
 }
 

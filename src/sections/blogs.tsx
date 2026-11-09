@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { TwoOClockArrowIcon } from "../assets/icons";
-import { ViewMore } from "../components";
+import React, { useRef, useState } from "react";
+import { ItemTitle, SectionTitle, ViewMore } from "../components";
+import { useIsActiveNavigationHook } from "../hooks";
 import { useBlogsQuery } from "../stores/services/github-portfolio-api";
 
 const BlogsSection = () => {
@@ -10,6 +10,9 @@ const BlogsSection = () => {
     page: 1,
     limit: 2,
   });
+
+  const ref = useRef(null);
+  useIsActiveNavigationHook(ref, data != null);
 
   if (isUninitialized || isLoading) {
     return <span>loading...</span>;
@@ -22,8 +25,8 @@ const BlogsSection = () => {
   const blogDataItems = data;
 
   return (
-    <div className="mt-32">
-      <h1 className="section__title">Blogs</h1>
+    <div ref={ref} id="blogs" data-item="blogs" className="v2-section mt-32">
+      <SectionTitle title="BLOGS" />
       <ul id="blog-list">
         {blogDataItems.map((item, index) => (
           <li
@@ -46,13 +49,10 @@ const BlogsSection = () => {
               />
             </div>
             <div className="col-span-6 -order-1 lg:order-none">
-              <h5 className="text-normal font-medium text-slate-500">
+              <h5 className="text-normal font-medium text-slate-400">
                 {item.createDate}
               </h5>
-              <h6 className="text-xl font-medium text-slate-200">
-                {item.title}
-                <TwoOClockArrowIcon className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
-              </h6>
+              <ItemTitle as="h6" title={item.title} href={item.href} />
             </div>
           </li>
         ))}

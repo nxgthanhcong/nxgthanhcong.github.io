@@ -24,6 +24,10 @@ const Navigation = () => {
         href: "projects",
         description: "projects",
       },
+      {
+        href: "blogs",
+        description: "blogs",
+      },
     ];
   }, []);
 
@@ -40,7 +44,7 @@ const Navigation = () => {
             className="inline-flex items-center gap-x-4 py-3"
           >
             <span className="nav-item__indicator inline-block h-px w-8 bg-slate-500 duration-200"></span>
-            <span className="nav-item__text text-sm font-semibold uppercase tracking-widest text-slate-500 duration-200">
+            <span className="nav-item__text text-sm font-semibold uppercase tracking-widest text-slate-400 duration-200">
               {item.description}
             </span>
           </a>

@@ -1,6 +1,11 @@
 import React, { useRef, useState } from "react";
-import { TwoOClockArrowIcon } from "../assets/icons";
-import { LinkList, SectionTitle, TagList, ViewMore } from "../components";
+import {
+  ItemTitle,
+  LinkList,
+  SectionTitle,
+  TagList,
+  ViewMore,
+} from "../components";
 import { useIsActiveNavigationHook } from "../hooks";
 import { useExperiencesQuery } from "../stores/services/github-portfolio-api";
 
@@ -47,16 +52,12 @@ const Experiences = () => {
             onMouseLeave={() => setActivedIndex(-1)}
           >
             <div className="lg:col-span-2">
-              <h3 className="text-sm font-medium text-slate-500">
+              <h3 className="text-sm font-medium text-slate-400">
                 {item.startDate.toUpperCase()} - {item.endDate.toUpperCase()}
               </h3>
             </div>
             <div className="lg:col-span-6">
-              <h5 className="text-xl font-medium text-slate-200">
-                {item.position} - {item.company}
-                <TwoOClockArrowIcon className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
-              </h5>
-              <h6 className="text-lg font-medium text-slate-500">Coder</h6>
+              <ItemTitle title={`${item.position} - ${item.company}`} />
               <p className="mt-3 text-lg leading-5 text-slate-400">
                 {"" + item.description}
               </p>
