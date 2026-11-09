@@ -94,7 +94,7 @@ export const fixtures = {
   "get-current-job-infomation.json": {
     role: "Software Engineer",
     company: "Test Co",
-    description: "Test job description",
+    description: "Test job <span class=\"text-slate-200\">highlighted</span> description",
   },
   "get-about-infomation.json": {
     content: "<p>About me test content</p>",

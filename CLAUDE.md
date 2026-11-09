@@ -23,7 +23,7 @@ Create React App 5 (`react-scripts` 5.0.1), TypeScript 4.9 (strict), Tailwind 3,
 - Files: `get-about-infomation.json`, `get-current-job-infomation.json`, `get-experiences.json`, `get-projects.json`, `get-blogs.json`. Editing them updates the live site without a build.
 - API: `src/stores/services/github-portfolio-api.ts` (exported as `portfolioApi`, registered in `src/stores/index.ts`).
 - Interfaces in `src/stores/models/` must match the JSON shape.
-- `about.content` and `links[].icon` are HTML strings rendered with `html-react-parser`.
+- `about.content`, current job `description` and `links[].icon` are HTML strings rendered with `html-react-parser`.
 - To edit data use the worktree at `../nxgthanhcong.github.io-data` (branch `what-is-database`). Do not commit data changes to `master`.
 - Tests mock `fetch` with fixtures in `src/setupTests.js`; update them when the JSON shape changes.
 - Header social icons come from `src/constants/social.ts`; an empty URL hides that icon.

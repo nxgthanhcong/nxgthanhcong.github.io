@@ -1,4 +1,5 @@
 import React from "react";
+import parse from "html-react-parser";
 import { useCurrentJobInfomationQuery } from "../stores/services/github-portfolio-api";
 import { displayCompany } from "../utils/text";
 
@@ -37,7 +38,7 @@ const Introduce = () => {
           </>
         )}
       </h2>
-      <p className="mt-4 max-w-[70%] text-xl text-slate-400">{description}</p>
+      <p className="mt-4 max-w-md text-xl text-slate-400 lg:max-w-[70%]">{parse(description)}</p>
     </>
   );
 };

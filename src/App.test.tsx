@@ -11,6 +11,8 @@ test("renders the home page with data from the github db", async () => {
   );
 
   expect(await screen.findByText("Ng Thanh Cong")).toBeInTheDocument();
+  // The job description is HTML: highlights render as elements, not raw tags.
+  expect((await screen.findByText("highlighted")).tagName).toBe("SPAN");
   expect(await screen.findByText("About me test content")).toBeInTheDocument();
   expect(await screen.findByText("Test Project")).toBeInTheDocument();
   expect(await screen.findByText("Test Blog Post")).toBeInTheDocument();
