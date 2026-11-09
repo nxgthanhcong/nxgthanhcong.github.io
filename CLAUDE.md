@@ -26,6 +26,7 @@ Create React App 5 (`react-scripts` 5.0.1), TypeScript 4.9 (strict), Tailwind 3,
 - `about.content` and `links[].icon` are HTML strings rendered with `html-react-parser`.
 - To edit data use the worktree at `../nxgthanhcong.github.io-data` (branch `what-is-database`). Do not commit data changes to `master`.
 - Tests mock `fetch` with fixtures in `src/setupTests.js`; update them when the JSON shape changes.
+- Header social icons come from `src/constants/social.ts`; an empty URL hides that icon.
 
 ## Deploy
 
