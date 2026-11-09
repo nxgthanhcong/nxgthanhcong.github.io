@@ -8,6 +8,6 @@ export default interface IProject {
   madeAt: string;
   href: string;
   description: string;
-  links: ILink[];
-  tags: ITag[];
+  links?: ILink[];
+  tags?: ITag[];
 }

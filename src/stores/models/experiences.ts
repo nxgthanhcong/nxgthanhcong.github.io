@@ -6,6 +6,6 @@ export default interface IExperience {
   position: string;
   company: string;
   description: string;
-  tags: ITag[];
+  tags?: ITag[];
   links?: ILink[];
 }
