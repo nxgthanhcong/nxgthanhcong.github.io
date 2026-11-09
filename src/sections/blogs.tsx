@@ -57,7 +57,7 @@ const BlogsSection = () => {
           </li>
         ))}
       </ul>
-      <ViewMore.IconRightSide url="/" title="View full blóg" />
+      <ViewMore.IconRightSide url="/" title="View all blogs" />
     </div>
   );
 };

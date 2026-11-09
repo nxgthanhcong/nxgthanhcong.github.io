@@ -6,8 +6,8 @@ const Ingredient = () => {
       <p className="text-slate-500">
         Loosely designed in <span className="text-slate-400">Figma</span> and
         coded in <span className="text-slate-400">Visual Studio Code</span> by
-        yours truly. Built with Next.js and Tailwind CSS, deployed with Vercel.
-        All text is set in the Inter typeface.
+        yours truly. Built with React, Redux Toolkit and Tailwind CSS, deployed
+        with GitHub Pages. All text is set in the Calibre typeface.
       </p>
     </div>
   );

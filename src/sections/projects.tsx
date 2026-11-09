@@ -68,7 +68,7 @@ const Projects = () => {
           </li>
         ))}
       </ul>
-      <ViewMore.IconRightSide url="/projects" title="View full projéct" />
+      <ViewMore.IconRightSide url="/projects" title="View all projects" />
     </div>
   );
 };
