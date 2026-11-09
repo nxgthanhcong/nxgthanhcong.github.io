@@ -12,7 +12,7 @@ import {
 const Home = () => {
   return (
     <Container girdColVariant="lg:grid-cols-2">
-      <header className="grid content-between max-h-screen lg:sticky lg:top-0 py-12 lg:py-24">
+      <header className="grid content-between max-h-screen lg:sticky lg:top-0 py-12 lg:py-24 lg:short:py-12">
         <div>
           <IntroduceSection />
           <Navigation />

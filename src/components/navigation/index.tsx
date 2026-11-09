@@ -32,7 +32,7 @@ const Navigation = () => {
   }, []);
 
   return (
-    <ul className="mt-16 hidden lg:block" id="navigation-menu">
+    <ul className="mt-16 hidden lg:block lg:short:mt-8" id="navigation-menu">
       {navigationItems.map((item) => (
         <li
           key={item.href}

@@ -3,6 +3,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        // Short viewports (e.g. 1366x768 / 1024x768 laptops): the sticky
+        // desktop header must still fit in one screen height.
+        short: { raw: "(max-height: 820px)" },
+      },
       fontFamily: {
         calibre: ["Calibre", "sans-serif"],
         sfMono: ["SFMono", "sans-serif"],
