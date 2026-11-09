@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, TagList, ViewMore } from "../components";
 import { TwoOClockArrowIcon } from "../assets/icons";
-import { useProjectsQuery } from "../stores/services/portfolio-api";
+import { useProjectsQuery } from "../stores/services/github-portfolio-api";
 
 const Projects = () => {
   const { isLoading, isUninitialized, isError, data } = useProjectsQuery({

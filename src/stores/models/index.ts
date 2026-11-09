@@ -1,4 +1,3 @@
-export type { default as IResponse } from "./response";
 export type { default as ICurrentJobInfomation } from "./current-job-infomation";
 export type { default as IAboutInfomation } from "./about-infomation";
 export type { default as ITag } from "./tag";

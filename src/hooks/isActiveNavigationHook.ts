@@ -4,9 +4,7 @@ import useIsInViewport from "./isInViewportHook";
 import { useEffect } from "react";
 
 const useIsActiveNavigationHook = (ref: any, componentRendered: boolean) => {
-  console.log("componentRendered: ", componentRendered);
   const isInViewPort = useIsInViewport(ref, componentRendered);
-  console.log("ex isInViewPort: ", isInViewPort);
 
   const dispatch = useDispatch();
 
