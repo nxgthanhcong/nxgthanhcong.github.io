@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(npm start)",
+      "PowerShell(npm start)",
+      "Bash(npm run build)",
+      "PowerShell(npm run build)",
+      "Bash(npm run typecheck)",
+      "PowerShell(npm run typecheck)",
+      "Bash(npm run lint)",
+      "PowerShell(npm run lint)",
+      "Bash(npm run test:ci)",
+      "PowerShell(npm run test:ci)",
+      "Bash(git status)",
+      "PowerShell(git status)",
+      "Bash(git diff *)",
+      "PowerShell(git diff *)",
+      "Bash(git log *)",
+      "PowerShell(git log *)",
+      "Bash(git show *)",
+      "PowerShell(git show *)",
+      "Bash(git branch *)",
+      "PowerShell(git branch *)"
+    ],
+    "ask": [
+      "Bash(npm run deploy*)",
+      "PowerShell(npm run deploy*)",
+      "Bash(git push)",
+      "PowerShell(git push)",
+      "Bash(git push *)",
+      "PowerShell(git push *)"
+    ],
+    "deny": [
+      "Bash(npm run eject*)",
+      "PowerShell(npm run eject*)"
+    ]
+  }
+}
