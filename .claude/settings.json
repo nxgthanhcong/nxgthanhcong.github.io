@@ -35,5 +35,20 @@
       "Bash(npm run eject*)",
       "PowerShell(npm run eject*)"
     ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/typecheck-on-stop.js\"",
+            "timeout": 120,
+            "statusMessage": "Type-checking (npm run typecheck)..."
+          }
+        ]
+      }
+    ]
   }
 }
