@@ -1,7 +1,7 @@
-export { default as IResponse } from "./response";
-export { default as ICurrentJobInfomation } from "./current-job-infomation";
-export { default as IAboutInfomation } from "./about-infomation";
-export { default as ITag } from "./tag";
-export { default as ILink } from "./link";
-export { default as IProject } from "./projects";
-export { default as IBlog } from "./blogs";
+export type { default as IResponse } from "./response";
+export type { default as ICurrentJobInfomation } from "./current-job-infomation";
+export type { default as IAboutInfomation } from "./about-infomation";
+export type { default as ITag } from "./tag";
+export type { default as ILink } from "./link";
+export type { default as IProject } from "./projects";
+export type { default as IBlog } from "./blogs";

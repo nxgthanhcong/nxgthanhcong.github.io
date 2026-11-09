@@ -1,6 +1,5 @@
 import { createApi } from "@reduxjs/toolkit/query/react";
 import baseQuery from "./github-base-query";
-import { transformResponse } from "./utilities";
 import {
   IAboutInfomation,
   ICurrentJobInfomation,
