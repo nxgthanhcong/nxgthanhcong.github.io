@@ -1,11 +1,11 @@
 [
   {
-    "startDate": "Jul 2024",
+    "startDate": "Feb 2026",
     "endDate": "Present",
     "position": "Software Engineer",
-    "company": "Excel Technologies (GreenFeed Group)",
+    "company": "Excel Technologies",
     "href": "https://exceltech.vn/",
-    "description": "Building and running the systems behind GreenFeed’s farm operations across 32 pig farms and 2 fish farms: production management, warehouse, planning, and sales integrated with SAP and e-invoicing. Background workers sync orders from Odoo to Solomon and process 1,000–2,000 transactions a day.",
+    "description": "Building the fish farm management system for GreenFeed as an outsourced project, including its warehouse integration, with Claude Code at the center of the development workflow.",
     "tags": [
       {
         "title": ".NET"
@@ -18,6 +18,28 @@
       },
       {
         "title": "Claude Code"
+      }
+    ]
+  },
+  {
+    "startDate": "Jul 2024",
+    "endDate": "Jan 2026",
+    "position": "Software Engineer",
+    "company": "GreenFeed",
+    "href": "https://www.greenfeed.com.vn/",
+    "description": "Built and ran the systems behind daily operations at 32 pig farms: production management, warehouse, planning, and sales integrated with SAP and e-invoicing. Background workers sync orders from Odoo to Solomon and process 1,000–2,000 transactions a day.",
+    "tags": [
+      {
+        "title": ".NET"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "React"
+      },
+      {
+        "title": "SAP"
       }
     ]
   },
