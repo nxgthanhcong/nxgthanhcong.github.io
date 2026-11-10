@@ -45,10 +45,22 @@
   },
   {
     "startDate": "Nov 2023",
-    "endDate": "Present",
-    "position": "Software Engineer",
+    "endDate": "Jun 2024",
+    "position": "Backend Engineer",
     "company": "VietCredit",
-    "description": "I focused on developing integrated modules for the internal system, API services, and database operations."
+    "href": "https://www.vietcredit.vn/",
+    "description": "Built features for the internal lending app covering customer profiles, contracts, loan applications, and disbursement, including money transfers through partner APIs and a MoMo integration.",
+    "tags": [
+      {
+        "title": ".NET"
+      },
+      {
+        "title": "ServiceStack"
+      },
+      {
+        "title": "SQL Server"
+      }
+    ]
   },
   {
     "startDate": "Mar 2022",
