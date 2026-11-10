@@ -42,6 +42,6 @@ Create React App 5 (`react-scripts` 5.0.1), TypeScript 4.9 (strict), Tailwind 3,
 ## Gotchas
 
 - Windows dev machine: PowerShell is the main shell; keep npm scripts cross-platform (use `node -e`, not `cp`/`copy`/`set`).
-- `public/assets/js/main.js` is plain JS loaded from `public/index.html` (cursor gradient on `.cursor-overlay`), outside React.
+- `public/assets/js/main.js` is plain JS referenced from `public/index.html` (cursor gradient on `.cursor-overlay`), outside React. Currently disabled: its script tag is commented out.
 - Image paths in the JSON are relative (`./assets/images/...`) and point to `public/assets/images/`. Don't rename/delete those files.
 - `/projects` deep links on GitHub Pages rely on `build/404.html` (created by `postbuild`).
