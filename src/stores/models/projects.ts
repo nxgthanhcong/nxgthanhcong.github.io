@@ -3,10 +3,10 @@ import ITag from "./tag";
 
 export default interface IProject {
   year: number;
-  imgUrl: string;
+  imgUrl?: string;
   title: string;
   madeAt: string;
-  href: string;
+  href?: string;
   description: string;
   links?: ILink[];
   tags?: ITag[];

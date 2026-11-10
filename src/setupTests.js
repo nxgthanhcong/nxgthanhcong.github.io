@@ -121,6 +121,12 @@ export const fixtures = {
       links: [{ title: "Repo", icon: "<svg></svg>" }],
       tags: [{ title: "React" }],
     },
+    {
+      year: 2026,
+      title: "Internal Project",
+      madeAt: "Test Co",
+      description: "No image, no link",
+    },
   ],
   "get-blogs.json": [
     {

@@ -18,6 +18,10 @@ test("renders the home page with data from the github db", async () => {
     await screen.findByRole("link", { name: /Software Engineer - Test Experience Co/ })
   ).toHaveAttribute("href", "https://example.com/");
   expect(await screen.findByText("Test Project")).toBeInTheDocument();
+  // A project without imgUrl renders no <img> (no broken image icon).
+  expect(await screen.findByText("Internal Project")).toBeInTheDocument();
+  expect(screen.getByAltText("Test Project screenshot")).toBeInTheDocument();
+  expect(screen.queryByAltText("Internal Project screenshot")).toBeNull();
   expect(await screen.findByText("Test Blog Post")).toBeInTheDocument();
   expect(window.fetch).toHaveBeenCalled();
 });

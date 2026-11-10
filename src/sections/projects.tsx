@@ -51,13 +51,22 @@ const Projects = () => {
             onMouseEnter={() => setActivedIndex(index)}
             onMouseLeave={() => setActivedIndex(-1)}
           >
-            <div className="col-span-3 lg:col-span-2">
-              <img
-                className="bg-[rgba(255, 255, 255, 0.15)] rounded border-2 border-solid border-[rgba(255,255,255,0.1)]"
-                src={item.imgUrl}
-                alt=""
-                width="120px"
-              />
+            <div
+              className={
+                // Keep the column on desktop so titles stay aligned; collapse it on mobile.
+                item.imgUrl
+                  ? "col-span-3 lg:col-span-2"
+                  : "hidden lg:col-span-2 lg:block"
+              }
+            >
+              {item.imgUrl && (
+                <img
+                  className="bg-[rgba(255, 255, 255, 0.15)] rounded border-2 border-solid border-[rgba(255,255,255,0.1)]"
+                  src={item.imgUrl}
+                  alt={`${item.title} screenshot`}
+                  width="120px"
+                />
+              )}
             </div>
             <div className="col-span-6 -order-1 lg:order-none">
               <ItemTitle title={item.title} href={item.href} />
