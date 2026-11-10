@@ -8,6 +8,7 @@ import {
 } from "../components";
 import { useProjectsQuery } from "../stores/services/github-portfolio-api";
 import { useIsActiveNavigationHook } from "../hooks";
+import { sortByYearDesc } from "../utils/sort";
 
 const Projects = () => {
   const [activedIndex, setActivedIndex] = useState(-1);
@@ -28,7 +29,7 @@ const Projects = () => {
     return <span>some thing went wrong</span>;
   }
 
-  const projectDataItems = data;
+  const projectDataItems = sortByYearDesc(data);
 
   return (
     <div

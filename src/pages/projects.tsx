@@ -3,6 +3,7 @@ import { Container, TagList, ViewMore } from "../components";
 import { TwoOClockArrowIcon } from "../assets/icons";
 import { useProjectsQuery } from "../stores/services/github-portfolio-api";
 import { getExternalHostname } from "../utils/url";
+import { sortByYearDesc } from "../utils/sort";
 
 const Projects = () => {
   const { isLoading, isUninitialized, isError, data } = useProjectsQuery({
@@ -18,7 +19,7 @@ const Projects = () => {
     return <span>some thing went wrong</span>;
   }
 
-  const projectDataItems = data;
+  const projectDataItems = sortByYearDesc(data);
 
   return (
     <Container girdColVariant="lg:grid-cols-1">
