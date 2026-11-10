@@ -88,20 +88,21 @@
     ]
   },
   {
-    "startDate": "Mar",
-    "endDate": "July 2021",
+    "startDate": "Mar 2021",
+    "endDate": "Jul 2021",
     "position": "Intern",
     "company": "TopOnTech",
-    "description": "I maintain our ERP system and oversee outsourcing projects. I ensure system stability and efficiency while addressing issues. Specializing in cronjobs, I gather web data for insights. Actively researching new tech.",
+    "href": "https://topon.tech/vi/",
+    "description": "Maintained the company’s ERP system and supported outsourcing projects, fixing issues to keep them stable, and wrote cron jobs that collected web data for analysis.",
     "tags": [
       {
-        "title": "Asp.net"
+        "title": "ASP.NET"
       },
       {
-        "title": "Asp.netcore"
+        "title": "ASP.NET Core"
       },
       {
-        "title": "SqlServer"
+        "title": "SQL Server"
       }
     ]
   }
