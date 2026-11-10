@@ -3,7 +3,7 @@
     "year": 2026,
     "title": "FMS Aqua",
     "madeAt": "Excel Technologies",
-    "description": "A management system for GreenFeed’s fish farms, covering daily work plans, harvest planning, feed and supply inventory, and risk alerts, with a reconciliation view that checks every warehouse issue against what each pond actually consumed. Built with Claude Code as a core part of the workflow.",
+    "description": "A multi-farm management system for GreenFeed’s fish farms, covering production management, planning, materials management (MM), feed and supply inventory, and Solomon integration, with a reconciliation view that checks every warehouse issue against what each pond actually consumed. Built with Claude Code as a core part of the workflow.",
     "tags": [
       {
         "title": ".NET"
@@ -16,6 +16,26 @@
       },
       {
         "title": "Claude Code"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "title": "FMS",
+    "madeAt": "GreenFeed",
+    "description": "A multi-farm management system for GreenFeed’s pig farms, covering production management, planning, materials management (MM), orders, sales and delivery, transportation, and e-invoicing, all integrated with SAP.",
+    "tags": [
+      {
+        "title": ".NET"
+      },
+      {
+        "title": "React"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "SAP"
       }
     ]
   },
