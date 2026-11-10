@@ -44,6 +44,30 @@
     ]
   },
   {
+    "startDate": "2023",
+    "endDate": "Present",
+    "position": "Full-Stack Developer",
+    "company": "Freelance",
+    "description": "Building e-commerce sites and Telegram bots for individual clients, end to end: backend, frontend, and deployment on a VPS with Docker.",
+    "tags": [
+      {
+        "title": "NestJS"
+      },
+      {
+        "title": "Next.js"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "Docker"
+      },
+      {
+        "title": "Claude Code"
+      }
+    ]
+  },
+  {
     "startDate": "Nov 2023",
     "endDate": "Jun 2024",
     "position": "Backend Engineer",
