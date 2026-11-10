@@ -1,7 +1,6 @@
 [
   {
     "year": 2026,
-    "imgUrl": "./assets/images/fmsaqua.webp",
     "title": "FMS Aqua",
     "madeAt": "Excel Technologies",
     "description": "A management system for GreenFeed’s fish farms, covering daily work plans, harvest planning, feed and supply inventory, and risk alerts, with a reconciliation view that checks every warehouse issue against what each pond actually consumed. Built with Claude Code as a core part of the workflow.",
