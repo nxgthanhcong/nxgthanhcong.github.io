@@ -1,11 +1,11 @@
 [
   {
-    "startDate": "Feb 2026",
+    "startDate": "Jul 2024",
     "endDate": "Present",
     "position": "Software Engineer",
     "company": "Excel Technologies (GreenFeed Group)",
     "href": "https://exceltech.vn/",
-    "description": "Building and running the systems behind GreenFeed’s farm operations across 32 pig farms and 2 fish farms: production management, warehouse, planning, and sales integrated with SAP and e-invoicing. Background workers sync orders from Odoo and process 1,000–2,000 transactions a day.",
+    "description": "Building and running the systems behind GreenFeed’s farm operations across 32 pig farms and 2 fish farms: production management, warehouse, planning, and sales integrated with SAP and e-invoicing. Background workers sync orders from Odoo to Solomon and process 1,000–2,000 transactions a day.",
     "tags": [
       {
         "title": ".NET"
