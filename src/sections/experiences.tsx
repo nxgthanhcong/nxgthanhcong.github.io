@@ -57,7 +57,10 @@ const Experiences = () => {
               </h3>
             </div>
             <div className="lg:col-span-6">
-              <ItemTitle title={`${item.position} - ${item.company}`} />
+              <ItemTitle
+                title={`${item.position} - ${item.company}`}
+                href={item.href}
+              />
               <p className="mt-3 text-lg leading-5 text-slate-400">
                 {"" + item.description}
               </p>

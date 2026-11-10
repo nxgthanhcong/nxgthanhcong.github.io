@@ -105,6 +105,7 @@ export const fixtures = {
       endDate: "Present",
       position: "Software Engineer",
       company: "Test Experience Co",
+      href: "https://example.com/",
       description: "Test experience description",
       tags: [{ title: "TypeScript" }],
     },
