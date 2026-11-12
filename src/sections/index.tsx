@@ -4,3 +4,4 @@ export { default as BlogsSection } from "./blogs";
 export { default as IngredientSection } from "./ingredient";
 export { default as IntroduceSection } from "./introduce";
 export { default as AboutSection } from "./about";
+export { default as EducationSection } from "./education";

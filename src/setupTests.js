@@ -110,6 +110,14 @@ export const fixtures = {
       tags: [{ title: "TypeScript" }],
     },
   ],
+  "get-education.json": [
+    {
+      kind: "College",
+      title: "Test College",
+      href: "https://college.example/",
+      description: "Test education description",
+    },
+  ],
   "get-projects.json": [
     {
       year: 2022,

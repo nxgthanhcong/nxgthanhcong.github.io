@@ -17,6 +17,9 @@ test("renders the home page with data from the github db", async () => {
   expect(
     await screen.findByRole("link", { name: /Software Engineer - Test Experience Co/ })
   ).toHaveAttribute("href", "https://example.com/");
+  expect(
+    await screen.findByRole("link", { name: /Test College/ })
+  ).toHaveAttribute("href", "https://college.example/");
   expect(await screen.findByText("Test Project")).toBeInTheDocument();
   // A project without imgUrl renders no <img> (no broken image icon).
   expect(await screen.findByText("Internal Project")).toBeInTheDocument();

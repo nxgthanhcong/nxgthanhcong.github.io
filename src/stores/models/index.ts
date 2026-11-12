@@ -4,3 +4,4 @@ export type { default as ITag } from "./tag";
 export type { default as ILink } from "./link";
 export type { default as IProject } from "./projects";
 export type { default as IBlog } from "./blogs";
+export type { default as IEducation } from "./education";

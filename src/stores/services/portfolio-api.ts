@@ -5,6 +5,7 @@ import {
   ICurrentJobInfomation,
   IProject,
   IBlog,
+  IEducation,
 } from "../models";
 import IExperience from "../models/experiences";
 
@@ -19,6 +20,9 @@ const api = createApi({
     }),
     experiences: build.query<IExperience[], void>({
       query: () => `get-experiences.json`,
+    }),
+    education: build.query<IEducation[], void>({
+      query: () => `get-education.json`,
     }),
     projects: build.query<IProject[], { page: number; limit: number }>({
       query: ({ page, limit }) => {
@@ -49,6 +53,7 @@ export const {
   useCurrentJobInfomationQuery,
   useAboutInfomationQuery,
   useExperiencesQuery,
+  useEducationQuery,
   useProjectsQuery,
   useBlogsQuery,
 } = api;

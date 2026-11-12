@@ -20,7 +20,7 @@ Create React App 5 (`react-scripts` 5.0.1), TypeScript 4.9 (strict), Tailwind 3,
 ## Data architecture
 
 - Content is static JSON in `public/data/`, fetched at runtime from `${PUBLIC_URL}/data/<file>.json` (see `src/stores/services/data-base-query.ts`).
-- Files: `get-about-infomation.json`, `get-current-job-infomation.json`, `get-experiences.json`, `get-projects.json`, `get-blogs.json`. With `npm start` running, saving one of them reloads http://localhost:4000 automatically; the live site updates after the push to `master` deploys.
+- Files: `get-about-infomation.json`, `get-current-job-infomation.json`, `get-experiences.json`, `get-education.json`, `get-projects.json`, `get-blogs.json`. With `npm start` running, saving one of them reloads http://localhost:4000 automatically; the live site updates after the push to `master` deploys.
 - API: `src/stores/services/portfolio-api.ts` (exported as `portfolioApi`, registered in `src/stores/index.ts`).
 - Interfaces in `src/stores/models/` must match the JSON shape.
 - `about.content`, current job `description` and `links[].icon` are HTML strings rendered with `html-react-parser`.
