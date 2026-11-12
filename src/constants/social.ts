@@ -5,4 +5,5 @@ export const SOCIAL_LINKS = {
   instagram: "",
   twitter: "",
   linkedin: "",
+  email: "mailto:nxgthanhcongcommunity@gmail.com",
 };
