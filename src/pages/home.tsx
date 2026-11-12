@@ -23,9 +23,9 @@ const Home = () => {
       <div className="scroll-smooth py-12 lg:py-24">
         <AboutSection />
         <ExperiencesSection />
-        <EducationSection />
         <ProjectsSection />
         <BlogsSection />
+        <EducationSection />
         <IngredientSection />
       </div>
     </Container>
