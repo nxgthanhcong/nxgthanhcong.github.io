@@ -27,7 +27,7 @@
     "position": "Software Engineer",
     "company": "GreenFeed",
     "href": "https://www.greenfeed.com.vn/",
-    "description": "Built and ran the systems behind daily operations at 32 pig farms: production management, warehouse, planning, and sales integrated with SAP and e-invoicing. Background workers sync orders from Odoo to Solomon and process 1,000–2,000 transactions a day.",
+    "description": "Built the Sales module of FMS, the system that runs GreenFeed’s 32 pig farms (14-person team, 3 on Sales): pig selection and weighing, orders, weight-based pricing and payments, real-time sync with inventory and pig status, and e-invoicing handed off to SAP. Background workers sync orders from Odoo to Solomon and process 1,000–2,000 transactions a day.",
     "tags": [
       {
         "title": ".NET"
@@ -37,6 +37,9 @@
       },
       {
         "title": "React"
+      },
+      {
+        "title": "Ant Design"
       },
       {
         "title": "SAP"
@@ -73,7 +76,7 @@
     "position": "Backend Engineer",
     "company": "VietCredit",
     "href": "https://www.vietcredit.vn/",
-    "description": "Built features for the internal lending app covering customer profiles, contracts, loan applications, and disbursement, including money transfers through partner APIs and a MoMo integration.",
+    "description": "Built APIs for the internal lending portal and service gateway across the whole loan lifecycle (applications, appraisal, approval, and disbursement), integrating banking systems, MoMo, and partner APIs for money transfers.",
     "tags": [
       {
         "title": ".NET"
@@ -92,19 +95,22 @@
     "position": "Backend Developer",
     "company": "FPT Telecom",
     "href": "https://fpt.vn/vi",
-    "description": "Built internal tools used by branches nationwide, working across every layer from SQL Server queries and API services to the web interfaces, and planning each feature directly with the people who use it.",
+    "description": "Built the system branches nationwide use for telecom contract transactions (new contracts, address and plan changes), then rebuilt it as microservices on .NET 6 with Kafka and Redis. Wrote shared libraries for logging, caching, and data access, kept every SQL Server query under 20 seconds on large datasets, and hardened the APIs against SQL injection and request flooding.",
     "tags": [
       {
-        "title": "ASP.NET"
+        "title": "ASP.NET MVC"
       },
       {
-        "title": "ASP.NET Core"
+        "title": ".NET 6"
       },
       {
         "title": "SQL Server"
       },
       {
-        "title": "jQuery"
+        "title": "Kafka"
+      },
+      {
+        "title": "Redis"
       },
       {
         "title": "React"
@@ -114,19 +120,25 @@
   {
     "startDate": "Mar 2021",
     "endDate": "Jul 2021",
-    "position": "Intern",
+    "position": "Backend Intern",
     "company": "TopOnTech",
     "href": "https://topon.tech/vi/",
-    "description": "Maintained the company’s ERP system and supported outsourcing projects, fixing issues to keep them stable, and wrote cron jobs that collected web data for analysis.",
+    "description": "Maintained the company’s ERP and outsourced projects, and built a scheduled service that collected bank and lottery data every day, with Redis caching, centralized logging on Elasticsearch and Kibana, and Telegram and email alerts for results and errors.",
     "tags": [
       {
-        "title": "ASP.NET"
+        "title": ".NET Core"
       },
       {
-        "title": "ASP.NET Core"
+        "title": "Redis"
       },
       {
-        "title": "SQL Server"
+        "title": "MySQL"
+      },
+      {
+        "title": "Quartz"
+      },
+      {
+        "title": "Elasticsearch"
       }
     ]
   }

@@ -23,7 +23,7 @@
     "year": 2025,
     "title": "FMS",
     "madeAt": "GreenFeed",
-    "description": "A multi-farm management system for GreenFeed’s pig farms, covering production management, planning, materials management (MM), orders, sales and delivery, transportation, and e-invoicing, all integrated with SAP.",
+    "description": "A multi-farm management system for GreenFeed’s pig farms, covering production, planning, materials management, orders, sales and delivery, transportation, and e-invoicing, integrated with SAP. I built the Sales module: assigning pigs to orders, the weighing flow, weight-based pricing and payments, and real-time sync with inventory and pig status.",
     "tags": [
       {
         "title": ".NET"
@@ -36,6 +36,29 @@
       },
       {
         "title": "SAP"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "title": "Service Request Transaction",
+    "madeAt": "FPT Telecom",
+    "description": "A microservice rebuild of the system FPT Telecom branches use for contract transactions, in a 5-person team. I worked across backend and frontend: APIs with structured logging, a shared library for logging, security, and data access, Redis caching, and React screens built from Figma designs.",
+    "tags": [
+      {
+        "title": ".NET 6"
+      },
+      {
+        "title": "Kafka"
+      },
+      {
+        "title": "Redis"
+      },
+      {
+        "title": "React"
+      },
+      {
+        "title": "TypeScript"
       }
     ]
   },
