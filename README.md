@@ -1,6 +1,6 @@
 # nxgthanhcong.github.io
 
-Personal portfolio of Ng Thanh Cong, live at **https://nxgthanhcong.github.io**.
+Personal portfolio of Nguyen Thanh Cong, live at **https://nxgthanhcong.github.io**.
 
 Built with Create React App 5, TypeScript, Tailwind CSS, Redux Toolkit / RTK Query and React Router.
 
