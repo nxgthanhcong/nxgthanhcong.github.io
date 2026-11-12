@@ -7,7 +7,7 @@ import {
   ViewMore,
 } from "../components";
 import { useIsActiveNavigationHook } from "../hooks";
-import { useExperiencesQuery } from "../stores/services/github-portfolio-api";
+import { useExperiencesQuery } from "../stores/services/portfolio-api";
 
 const Experiences = () => {
   const [activedIndex, setActivedIndex] = useState(-1);

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { ItemTitle, SectionTitle, ViewMore } from "../components";
 import { useIsActiveNavigationHook } from "../hooks";
-import { useBlogsQuery } from "../stores/services/github-portfolio-api";
+import { useBlogsQuery } from "../stores/services/portfolio-api";
 
 const BlogsSection = () => {
   const [activedIndex, setActivedIndex] = useState(-1);

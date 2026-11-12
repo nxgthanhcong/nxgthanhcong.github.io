@@ -89,7 +89,7 @@ if (typeof window.Response === "undefined") {
 }
 
 // --- Fixtures served by the mocked fetch (keyed by file name) -------------
-// Shapes mirror the JSON on the `what-is-database` branch.
+// Shapes mirror the JSON in public/data/.
 export const fixtures = {
   "get-current-job-infomation.json": {
     role: "Software Engineer",

@@ -1,6 +1,6 @@
 import React from "react";
 import parse from "html-react-parser";
-import { useCurrentJobInfomationQuery } from "../stores/services/github-portfolio-api";
+import { useCurrentJobInfomationQuery } from "../stores/services/portfolio-api";
 import { displayCompany } from "../utils/text";
 
 const Introduce = () => {

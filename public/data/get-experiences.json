@@ -1,0 +1,133 @@
+[
+  {
+    "startDate": "Feb 2026",
+    "endDate": "Present",
+    "position": "Software Engineer",
+    "company": "Excel Technologies",
+    "href": "https://exceltech.vn/",
+    "description": "Building the fish farm management system for GreenFeed as an outsourced project, including its warehouse integration, with Claude Code at the center of the development workflow.",
+    "tags": [
+      {
+        "title": ".NET"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "React"
+      },
+      {
+        "title": "Claude Code"
+      }
+    ]
+  },
+  {
+    "startDate": "Jul 2024",
+    "endDate": "Jan 2026",
+    "position": "Software Engineer",
+    "company": "GreenFeed",
+    "href": "https://www.greenfeed.com.vn/",
+    "description": "Built and ran the systems behind daily operations at 32 pig farms: production management, warehouse, planning, and sales integrated with SAP and e-invoicing. Background workers sync orders from Odoo to Solomon and process 1,000–2,000 transactions a day.",
+    "tags": [
+      {
+        "title": ".NET"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "React"
+      },
+      {
+        "title": "SAP"
+      }
+    ]
+  },
+  {
+    "startDate": "2023",
+    "endDate": "Present",
+    "position": "Full-Stack Developer",
+    "company": "Freelance",
+    "description": "Building e-commerce sites and Telegram bots for individual clients, end to end: backend, frontend, and deployment on a VPS with Docker.",
+    "tags": [
+      {
+        "title": "NestJS"
+      },
+      {
+        "title": "Next.js"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "Docker"
+      },
+      {
+        "title": "Claude Code"
+      }
+    ]
+  },
+  {
+    "startDate": "Nov 2023",
+    "endDate": "Jun 2024",
+    "position": "Backend Engineer",
+    "company": "VietCredit",
+    "href": "https://www.vietcredit.vn/",
+    "description": "Built features for the internal lending app covering customer profiles, contracts, loan applications, and disbursement, including money transfers through partner APIs and a MoMo integration.",
+    "tags": [
+      {
+        "title": ".NET"
+      },
+      {
+        "title": "ServiceStack"
+      },
+      {
+        "title": "SQL Server"
+      }
+    ]
+  },
+  {
+    "startDate": "Mar 2022",
+    "endDate": "Sep 2023",
+    "position": "Backend Developer",
+    "company": "FPT Telecom",
+    "href": "https://fpt.vn/vi",
+    "description": "Built internal tools used by branches nationwide, working across every layer from SQL Server queries and API services to the web interfaces, and planning each feature directly with the people who use it.",
+    "tags": [
+      {
+        "title": "ASP.NET"
+      },
+      {
+        "title": "ASP.NET Core"
+      },
+      {
+        "title": "SQL Server"
+      },
+      {
+        "title": "jQuery"
+      },
+      {
+        "title": "React"
+      }
+    ]
+  },
+  {
+    "startDate": "Mar 2021",
+    "endDate": "Jul 2021",
+    "position": "Intern",
+    "company": "TopOnTech",
+    "href": "https://topon.tech/vi/",
+    "description": "Maintained the company’s ERP system and supported outsourcing projects, fixing issues to keep them stable, and wrote cron jobs that collected web data for analysis.",
+    "tags": [
+      {
+        "title": "ASP.NET"
+      },
+      {
+        "title": "ASP.NET Core"
+      },
+      {
+        "title": "SQL Server"
+      }
+    ]
+  }
+]

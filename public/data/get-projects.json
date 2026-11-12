@@ -1,0 +1,64 @@
+[
+  {
+    "year": 2026,
+    "title": "FMS Aqua",
+    "madeAt": "Excel Technologies",
+    "description": "A multi-farm management system for GreenFeed’s fish farms, covering production management, planning, materials management (MM), feed and supply inventory, and Solomon integration, with a reconciliation view that checks every warehouse issue against what each pond actually consumed. Built with Claude Code as a core part of the workflow.",
+    "tags": [
+      {
+        "title": ".NET"
+      },
+      {
+        "title": "React"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "Claude Code"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "title": "FMS",
+    "madeAt": "GreenFeed",
+    "description": "A multi-farm management system for GreenFeed’s pig farms, covering production management, planning, materials management (MM), orders, sales and delivery, transportation, and e-invoicing, all integrated with SAP.",
+    "tags": [
+      {
+        "title": ".NET"
+      },
+      {
+        "title": "React"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "SAP"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "imgUrl": "./assets/images/dblstore.webp",
+    "title": "DBL Store",
+    "madeAt": "Freelance",
+    "href": "https://dblstore.net/",
+    "description": "An online store for Dragon Ball Legends game accounts: customers sign in with Google, top up points, pick an account within their budget, and receive it instantly. Built end to end, from the storefront and API to deployment.",
+    "tags": [
+      {
+        "title": "Next.js"
+      },
+      {
+        "title": "NestJS"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "Docker"
+      }
+    ]
+  }
+]

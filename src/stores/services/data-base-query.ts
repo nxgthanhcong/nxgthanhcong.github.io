@@ -1,9 +1,10 @@
 import { fetchBaseQuery, retry } from "@reduxjs/toolkit/query";
-const apiUrl = process.env.REACT_APP_GITHUBDB_API_URL;
 
+// Site content lives in public/data/*.json on master and is served next to
+// the app (https://nxgthanhcong.github.io/data/<file>.json).
 const staggeredBaseQuery = retry(
   fetchBaseQuery({
-    baseUrl: `${apiUrl}/nxgthanhcong/nxgthanhcong.github.io/what-is-database/`,
+    baseUrl: `${process.env.PUBLIC_URL}/data/`,
   }),
   {
     maxRetries: 5,

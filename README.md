@@ -24,9 +24,8 @@ npm start          # http://localhost:4000
 
 ## Where the content lives
 
-The page content (about, current job, experiences, projects, blogs) is **not** in this branch.
-It is stored as JSON files on the [`what-is-database`](https://github.com/nxgthanhcong/nxgthanhcong.github.io/tree/what-is-database) branch
-and fetched at runtime from `raw.githubusercontent.com`. Editing those files updates the site without rebuilding.
+The page content (about, current job, experiences, projects, blogs) is JSON in [`public/data/`](public/data/), fetched at runtime.
+With `npm start` running, saving a file there reloads the page immediately. The live site updates when the change is pushed to `master` and deployed.
 
 Images referenced by the JSON live in `public/assets/images/`.
 

@@ -6,7 +6,7 @@ import {
   TagList,
   ViewMore,
 } from "../components";
-import { useProjectsQuery } from "../stores/services/github-portfolio-api";
+import { useProjectsQuery } from "../stores/services/portfolio-api";
 import { useIsActiveNavigationHook } from "../hooks";
 import { sortByYearDesc } from "../utils/sort";
 

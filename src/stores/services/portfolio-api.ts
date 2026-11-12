@@ -1,5 +1,5 @@
 import { createApi } from "@reduxjs/toolkit/query/react";
-import baseQuery from "./github-base-query";
+import baseQuery from "./data-base-query";
 import {
   IAboutInfomation,
   ICurrentJobInfomation,
