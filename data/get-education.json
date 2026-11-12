@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "College",
+    "title": "Cao Thang Technical College",
+    "href": "https://caothang.edu.vn/",
+    "description": "Graduated with excellent grades, with scholarships in semesters 3, 4, and 5."
+  },
+  {
+    "kind": "Certificate",
+    "title": "Foundational C# with Microsoft",
+    "href": "https://www.freecodecamp.org/certification/ngthanhcong/foundational-c-sharp-with-microsoft",
+    "description": "freeCodeCamp × Microsoft"
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+    "startDate": "Feb 2026",
+    "endDate": "Present",
+    "position": "Software Engineer",
+    "company": "Excel Technologies",
+    "href": "https://exceltech.vn/",
+    "description": "Building the fish farm management system for GreenFeed as an outsourced project, including its warehouse integration, with Claude Code at the center of the development workflow.",
+    "tags": [
+      {
+        "title": ".NET"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "React"
+      },
+      {
+        "title": "Claude Code"
+      }
+    ]
+  },
+  {
+    "startDate": "Jul 2024",
+    "endDate": "Jan 2026",
+    "position": "Software Engineer",
+    "company": "GreenFeed",
+    "href": "https://www.greenfeed.com.vn/",
+    "description": "Built the Sales module of FMS, the system that runs GreenFeed’s 32 pig farms (14-person team, 3 on Sales): pig selection and weighing, orders, weight-based pricing and payments, real-time sync with inventory and pig status, and e-invoicing handed off to SAP. Background workers sync orders from Odoo to Solomon and process 1,000–2,000 transactions a day.",
+    "tags": [
+      {
+        "title": ".NET"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "React"
+      },
+      {
+        "title": "Ant Design"
+      },
+      {
+        "title": "SAP"
+      }
+    ]
+  },
+  {
+    "startDate": "2023",
+    "endDate": "Present",
+    "position": "Full-Stack Developer",
+    "company": "Freelance",
+    "description": "Building e-commerce sites and Telegram bots for individual clients, end to end: backend, frontend, and deployment on a VPS with Docker.",
+    "tags": [
+      {
+        "title": "NestJS"
+      },
+      {
+        "title": "Next.js"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "Docker"
+      },
+      {
+        "title": "Claude Code"
+      }
+    ]
+  },
+  {
+    "startDate": "Nov 2023",
+    "endDate": "Jun 2024",
+    "position": "Backend Engineer",
+    "company": "VietCredit",
+    "href": "https://www.vietcredit.vn/",
+    "description": "Built APIs for the internal lending portal and service gateway across the whole loan lifecycle (applications, appraisal, approval, and disbursement), integrating banking systems, MoMo, and partner APIs for money transfers.",
+    "tags": [
+      {
+        "title": ".NET"
+      },
+      {
+        "title": "ServiceStack"
+      },
+      {
+        "title": "SQL Server"
+      }
+    ]
+  },
+  {
+    "startDate": "Mar 2022",
+    "endDate": "Sep 2023",
+    "position": "Backend Developer",
+    "company": "FPT Telecom",
+    "href": "https://fpt.vn/vi",
+    "description": "Built the system branches nationwide use for telecom contract transactions (new contracts, address and plan changes), then rebuilt it as microservices on .NET 6 with Kafka and Redis. Wrote shared libraries for logging, caching, and data access, kept every SQL Server query under 20 seconds on large datasets, and hardened the APIs against SQL injection and request flooding.",
+    "tags": [
+      {
+        "title": "ASP.NET MVC"
+      },
+      {
+        "title": ".NET 6"
+      },
+      {
+        "title": "SQL Server"
+      },
+      {
+        "title": "Kafka"
+      },
+      {
+        "title": "Redis"
+      },
+      {
+        "title": "React"
+      }
+    ]
+  },
+  {
+    "startDate": "Mar 2021",
+    "endDate": "Jul 2021",
+    "position": "Backend Intern",
+    "company": "TopOnTech",
+    "href": "https://topon.tech/vi/",
+    "description": "Maintained the company’s ERP and outsourced projects, and built a scheduled service that collected bank and lottery data every day, with Redis caching, centralized logging on Elasticsearch and Kibana, and Telegram and email alerts for results and errors.",
+    "tags": [
+      {
+        "title": ".NET Core"
+      },
+      {
+        "title": "Redis"
+      },
+      {
+        "title": "MySQL"
+      },
+      {
+        "title": "Quartz"
+      },
+      {
+        "title": "Elasticsearch"
+      }
+    ]
+  }
+]

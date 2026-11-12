@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3cea400e.css",
-    "main.js": "/static/js/main.e00758ae.js",
+    "main.js": "/static/js/main.28358e42.js",
     "static/js/787.59f79936.chunk.js": "/static/js/787.59f79936.chunk.js",
     "static/media/SFMono-Regular.woff2": "/static/media/SFMono-Regular.8799e6387338d58f2f13.woff2",
     "static/media/Calibre-Semibold.woff2": "/static/media/Calibre-Semibold.94fc73852539d6733dc0.woff2",
@@ -11,11 +11,11 @@
     "static/media/9oclock-arrow-icon.svg": "/static/media/9oclock-arrow-icon.1e7823f4ac380679e1b56558a83e4bf0.svg",
     "static/media/2oclock-arrow-icon.svg": "/static/media/2oclock-arrow-icon.26a6f791b24a18455ba2ffd44cac3f00.svg",
     "main.3cea400e.css.map": "/static/css/main.3cea400e.css.map",
-    "main.e00758ae.js.map": "/static/js/main.e00758ae.js.map",
+    "main.28358e42.js.map": "/static/js/main.28358e42.js.map",
     "787.59f79936.chunk.js.map": "/static/js/787.59f79936.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3cea400e.css",
-    "static/js/main.e00758ae.js"
+    "static/js/main.28358e42.js"
   ]
 }
