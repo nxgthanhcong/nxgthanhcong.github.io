@@ -9,8 +9,8 @@
   <rect width="960" height="540" fill="url(#bg)"/>
   <rect width="960" height="540" fill="url(#dots)"/>
   <rect width="960" height="540" fill="url(#spot)"/>
-  <text x="80" y="96" font-size="15" font-weight="700" letter-spacing="3" fill="#5eead4">SERVICE REQUEST TRANSACTION</text>
-  <text x="80" y="146" font-size="40" font-weight="700" fill="#f8fafc">Microservices on Kafka</text>
+  <text x="80" y="96" font-size="15" font-weight="700" letter-spacing="3" fill="#5eead4">TRANSACTION COUNTER · FPT TELECOM</text>
+  <text x="80" y="146" font-size="40" font-weight="700" fill="#f8fafc">Contract transactions at the counter</text>
   <path d="M248 336 H285" stroke="#5eead4" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.5 6" marker-end="url(#arrow)"/>
   <path d="M461 336 H498" stroke="#5eead4" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.5 6" marker-end="url(#arrow)"/>
   <path d="M674 336 H711" stroke="#5eead4" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.5 6" marker-end="url(#arrow)"/>
@@ -19,27 +19,27 @@
     <rect x="80" y="252" width="160" height="168" rx="18" fill="#121f36" stroke="#26364f" stroke-opacity="1" stroke-width="1.6"/>
   </g>
   <g transform="translate(137 282) scale(0.9583333333333334)" fill="none" stroke="#5eead4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="38" height="25" rx="3"/><path d="M17 41 H31 M24 33 V41"/><path d="M11 15 H24 M11 20 H31 M11 25 H20"/></g>
-  <text x="160" y="364" text-anchor="middle" font-size="20" font-weight="600" fill="#f1f5f9">Branch UI</text>
-  <text x="160" y="390" text-anchor="middle" font-size="14" font-weight="400" fill="#8b9ab0">React + TS</text>
+  <text x="160" y="364" text-anchor="middle" font-size="20" font-weight="600" fill="#f1f5f9">Branch counter</text>
+  <text x="160" y="390" text-anchor="middle" font-size="14" font-weight="400" fill="#8b9ab0">Staff request</text>
   <text x="373" y="230" text-anchor="middle" font-size="15" font-weight="600" letter-spacing="1.5" fill="#7c8ba1">02</text>
   <g>
     <rect x="293" y="252" width="160" height="168" rx="18" fill="#121f36" stroke="#26364f" stroke-opacity="1" stroke-width="1.6"/>
   </g>
-  <g transform="translate(350 282) scale(0.9583333333333334)" fill="none" stroke="#5eead4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24.0 6.0 L39.6 15.0 L39.6 33.0 L24.0 42.0 L8.4 33.0 L8.4 15.0 Z"/><path d="M15 24 H33 M27 18 L33 24 L27 30"/></g>
-  <text x="373" y="364" text-anchor="middle" font-size="20" font-weight="600" fill="#f1f5f9">API gateway</text>
-  <text x="373" y="390" text-anchor="middle" font-size="14" font-weight="400" fill="#8b9ab0">.NET 6</text>
+  <g transform="translate(350 282) scale(0.9583333333333334)" fill="none" stroke="#5eead4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 6 H31 L37 12 V42 L33 39 L29 42 L25 39 L21 42 L17 39 L13 42 Z"/><path d="M18 17 H32 M18 23 H32 M18 29 H27"/></g>
+  <text x="373" y="364" text-anchor="middle" font-size="20" font-weight="600" fill="#f1f5f9">Contract</text>
+  <text x="373" y="390" text-anchor="middle" font-size="14" font-weight="400" fill="#8b9ab0">New · address · plan</text>
   <text x="586" y="230" text-anchor="middle" font-size="15" font-weight="600" letter-spacing="1.5" fill="#5eead4">03</text>
   <g filter="url(#glow)">
     <rect x="506" y="252" width="160" height="168" rx="18" fill="#163049" stroke="#5eead4" stroke-opacity="0.9" stroke-width="1.6"/>
   </g>
-  <g transform="translate(563 282) scale(0.9583333333333334)" fill="none" stroke="#5eead4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15 H43 M5 24 H43 M5 33 H43"/><circle cx="14" cy="15" r="3"/><circle cx="31" cy="24" r="3"/><circle cx="20" cy="33" r="3"/></g>
-  <text x="586" y="364" text-anchor="middle" font-size="20" font-weight="600" fill="#f1f5f9">Kafka</text>
-  <text x="586" y="390" text-anchor="middle" font-size="14" font-weight="600" fill="#99f6e4">Event bus</text>
+  <g transform="translate(563 282) scale(0.9583333333333334)" fill="none" stroke="#5eead4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15.0 5.5 L23.2 10.3 L23.2 19.8 L15.0 24.5 L6.8 19.8 L6.8 10.3 Z"/><path d="M33.0 5.5 L41.2 10.3 L41.2 19.8 L33.0 24.5 L24.8 19.8 L24.8 10.3 Z"/><path d="M24.0 22.5 L32.2 27.3 L32.2 36.8 L24.0 41.5 L15.8 36.8 L15.8 27.3 Z"/></g>
+  <text x="586" y="364" text-anchor="middle" font-size="20" font-weight="600" fill="#f1f5f9">SOA modules</text>
+  <text x="586" y="390" text-anchor="middle" font-size="14" font-weight="600" fill="#99f6e4">Business rules</text>
   <text x="799" y="230" text-anchor="middle" font-size="15" font-weight="600" letter-spacing="1.5" fill="#7c8ba1">04</text>
   <g>
     <rect x="719" y="252" width="160" height="168" rx="18" fill="#121f36" stroke="#26364f" stroke-opacity="1" stroke-width="1.6"/>
   </g>
-  <g transform="translate(776 282) scale(0.9583333333333334)" fill="none" stroke="#5eead4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15.0 5.5 L23.2 10.3 L23.2 19.8 L15.0 24.5 L6.8 19.8 L6.8 10.3 Z"/><path d="M33.0 5.5 L41.2 10.3 L41.2 19.8 L33.0 24.5 L24.8 19.8 L24.8 10.3 Z"/><path d="M24.0 22.5 L32.2 27.3 L32.2 36.8 L24.0 41.5 L15.8 36.8 L15.8 27.3 Z"/></g>
-  <text x="799" y="364" text-anchor="middle" font-size="20" font-weight="600" fill="#f1f5f9">Services</text>
-  <text x="799" y="390" text-anchor="middle" font-size="14" font-weight="400" fill="#8b9ab0">Redis · SQL Server</text>
+  <g transform="translate(776 282) scale(0.9583333333333334)" fill="none" stroke="#5eead4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="11" rx="14" ry="5"/><path d="M10 11 V36 c0 2.8 6.3 5 14 5 s14-2.2 14-5 V11"/><path d="M10 23.5 c0 2.8 6.3 5 14 5 s14-2.2 14-5"/></g>
+  <text x="799" y="364" text-anchor="middle" font-size="20" font-weight="600" fill="#f1f5f9">SQL Server</text>
+  <text x="799" y="390" text-anchor="middle" font-size="14" font-weight="400" fill="#8b9ab0">Stored procedures</text>
 </svg>

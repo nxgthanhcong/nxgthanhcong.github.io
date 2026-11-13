@@ -95,7 +95,7 @@
     "position": "Software Engineer",
     "company": "FPT Telecom",
     "href": "https://fpt.vn/vi",
-    "description": "Built the system branches nationwide use for telecom contract transactions (new contracts, address and plan changes), working across backend and frontend, then helped rebuild it as microservices on .NET 6, Kafka, and Redis in a 5-person team. Every query had to finish within the DBA team’s 20-second timeout on telecom-scale data, so I tuned complex SQL Server queries and moved business rules into stored procedures that could change without a rebuild. Also wrote shared libraries for logging, caching, and data access, and hardened the APIs against SQL injection and request flooding.",
+    "description": "Built the system branches nationwide use for telecom contract transactions (new contracts, address and plan changes), working across backend and frontend, then helped rebuild it on .NET 6 microservices in a 5-person team, with Redis caching and logs shipped through Kafka to Kibana. Every query had to finish within the DBA team’s 20-second timeout on telecom-scale data, so I tuned complex SQL Server queries and moved business rules into stored procedures that could change without a rebuild. Also wrote shared libraries for logging, caching, and data access, and hardened the APIs against SQL injection and request flooding.",
     "tags": [
       {
         "title": "ASP.NET MVC"

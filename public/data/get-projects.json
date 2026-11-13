@@ -42,26 +42,29 @@
     ]
   },
   {
-    "year": 2023,
-    "imgUrl": "./assets/images/service-request-transaction.svg",
-    "title": "Service Request Transaction",
+    "year": 2022,
+    "imgUrl": "./assets/images/transaction-counter.svg",
+    "title": "Transaction Counter",
     "madeAt": "FPT Telecom",
-    "description": "A microservice rebuild of the system FPT Telecom branches use for contract transactions, in a 5-person team. I worked across backend and frontend: APIs with structured logging, a shared library for logging, security, and data access, Redis caching, and React screens built from Figma designs.",
+    "description": "The counter system FPT Telecom branches nationwide use for contract transactions: new contracts, address changes, and internet plan changes. In a two-person team I built backend and frontend, split it into SOA modules, and moved business rules into stored procedures so they could change without a rebuild, with every query inside the DBA team’s 20-second timeout and the APIs hardened against SQL injection and request flooding. It was later rebuilt on .NET 6 microservices (Service Request Transaction) with Redis caching and logs shipped through Kafka to Kibana.",
     "tags": [
       {
-        "title": ".NET 6"
+        "title": "ASP.NET MVC"
       },
       {
-        "title": "Kafka"
+        "title": "SQL Server"
+      },
+      {
+        "title": "jQuery"
+      },
+      {
+        "title": ".NET 6"
       },
       {
         "title": "Redis"
       },
       {
         "title": "React"
-      },
-      {
-        "title": "TypeScript"
       }
     ]
   },
