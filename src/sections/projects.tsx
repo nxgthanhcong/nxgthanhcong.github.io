@@ -72,10 +72,11 @@ const Projects = () => {
                   }
                 >
                   <img
-                    className="bg-[rgba(255, 255, 255, 0.15)] rounded border-2 border-solid border-[rgba(255,255,255,0.1)] transition duration-200 hover:border-[rgba(94,234,212,0.5)]"
+                    className="h-[68px] w-[120px] object-cover bg-[rgba(255, 255, 255, 0.15)] rounded border-2 border-solid border-[rgba(255,255,255,0.1)] transition duration-200 hover:border-[rgba(94,234,212,0.5)]"
                     src={item.imgUrl}
                     alt={`${item.title} preview`}
                     width="120px"
+                    height="68px"
                   />
                 </button>
               ) : (

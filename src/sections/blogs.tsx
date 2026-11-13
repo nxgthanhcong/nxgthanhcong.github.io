@@ -48,9 +48,10 @@ const BlogsSection = () => {
           >
             <div className="col-span-3 lg:col-span-2">
               <img
-                className="bg-[rgba(255, 255, 255, 0.15)] rounded border-2 border-solid border-[rgba(255,255,255,0.1)]"
+                className="h-[68px] w-[120px] object-cover bg-[rgba(255, 255, 255, 0.15)] rounded border-2 border-solid border-[rgba(255,255,255,0.1)]"
                 src={item.imgUrl}
                 width="120px"
+                height="68px"
                 alt=""
               />
             </div>
