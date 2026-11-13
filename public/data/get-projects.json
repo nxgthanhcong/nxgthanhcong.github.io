@@ -1,6 +1,7 @@
 [
   {
     "year": 2026,
+    "imgUrl": "./assets/images/fms-aqua.svg",
     "title": "FMS Aqua",
     "madeAt": "Excel Technologies",
     "description": "A multi-farm management system for GreenFeed’s fish farms, covering production management, planning, materials management (MM), feed and supply inventory, and Solomon integration, with a reconciliation view that checks every warehouse issue against what each pond actually consumed. Built with Claude Code as a core part of the workflow.",
@@ -21,6 +22,7 @@
   },
   {
     "year": 2025,
+    "imgUrl": "./assets/images/fms.svg",
     "title": "FMS",
     "madeAt": "GreenFeed",
     "description": "A multi-farm management system for GreenFeed’s pig farms, covering production, planning, materials management, orders, sales and delivery, transportation, and e-invoicing, integrated with SAP. I was one of three engineers on the Sales module, which handles everything from assigning pigs to orders, the weighing flow, and weight-based pricing and payments to issuing e-invoices, syncing with inventory and pig status in real time and sending the final transactions on to SAP.",
@@ -41,6 +43,7 @@
   },
   {
     "year": 2023,
+    "imgUrl": "./assets/images/service-request-transaction.svg",
     "title": "Service Request Transaction",
     "madeAt": "FPT Telecom",
     "description": "A microservice rebuild of the system FPT Telecom branches use for contract transactions, in a 5-person team. I worked across backend and frontend: APIs with structured logging, a shared library for logging, security, and data access, Redis caching, and React screens built from Figma designs.",

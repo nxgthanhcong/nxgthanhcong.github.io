@@ -57,7 +57,7 @@ const Projects = () => {
                 <img
                   className="bg-[rgba(255, 255, 255, 0.15)] rounded border-2 border-solid border-[rgba(255,255,255,0.1)]"
                   src={item.imgUrl}
-                  alt={`${item.title} screenshot`}
+                  alt={`${item.title} preview`}
                   width="120px"
                 />
               ) : (

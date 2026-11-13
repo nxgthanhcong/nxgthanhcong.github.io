@@ -23,8 +23,8 @@ test("renders the home page with data from the github db", async () => {
   expect(await screen.findByText("Test Project")).toBeInTheDocument();
   // A project without imgUrl renders no <img> (no broken image icon).
   expect(await screen.findByText("Internal Project")).toBeInTheDocument();
-  expect(screen.getByAltText("Test Project screenshot")).toBeInTheDocument();
-  expect(screen.queryByAltText("Internal Project screenshot")).toBeNull();
+  expect(screen.getByAltText("Test Project preview")).toBeInTheDocument();
+  expect(screen.queryByAltText("Internal Project preview")).toBeNull();
   expect(
     screen.getByRole("img", { name: /Internal Project: internal system/ })
   ).toBeInTheDocument();
