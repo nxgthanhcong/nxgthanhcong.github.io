@@ -23,7 +23,7 @@
     "year": 2025,
     "title": "FMS",
     "madeAt": "GreenFeed",
-    "description": "A multi-farm management system for GreenFeed’s pig farms, covering production, planning, materials management, orders, sales and delivery, transportation, and e-invoicing, integrated with SAP. I built the Sales module: assigning pigs to orders, the weighing flow, weight-based pricing and payments, and real-time sync with inventory and pig status.",
+    "description": "A multi-farm management system for GreenFeed’s pig farms, covering production, planning, materials management, orders, sales and delivery, transportation, and e-invoicing, integrated with SAP. I was one of three engineers on the Sales module, which handles everything from assigning pigs to orders, the weighing flow, and weight-based pricing and payments to issuing e-invoices, syncing with inventory and pig status in real time and sending the final transactions on to SAP.",
     "tags": [
       {
         "title": ".NET"

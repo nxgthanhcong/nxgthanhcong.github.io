@@ -27,7 +27,7 @@
     "position": "Software Engineer",
     "company": "GreenFeed",
     "href": "https://www.greenfeed.com.vn/",
-    "description": "Built the Sales module of FMS, the system that runs GreenFeed’s 32 pig farms (14-person team, 3 on Sales): pig selection and weighing, orders, weight-based pricing and payments, real-time sync with inventory and pig status, and e-invoicing handed off to SAP. Background workers sync orders from Odoo to Solomon and process 1,000–2,000 transactions a day.",
+    "description": "Built the Sales module of FMS, the system that runs GreenFeed’s 32 pig farms (14-person team, 3 on Sales): pig selection and weighing, orders, weight-based pricing and payments, real-time sync with inventory and pig status, and issuing e-invoices, with the final transactions sent on to SAP. Background workers sync orders from Odoo to Solomon and process 1,000–2,000 transactions a day.",
     "tags": [
       {
         "title": ".NET"
@@ -73,7 +73,7 @@
   {
     "startDate": "Nov 2023",
     "endDate": "Jun 2024",
-    "position": "Backend Engineer",
+    "position": "Software Engineer",
     "company": "VietCredit",
     "href": "https://www.vietcredit.vn/",
     "description": "Built APIs for the internal lending portal and service gateway across the whole loan lifecycle (applications, appraisal, approval, and disbursement), integrating banking systems, MoMo, and partner APIs for money transfers.",
@@ -92,10 +92,10 @@
   {
     "startDate": "Mar 2022",
     "endDate": "Sep 2023",
-    "position": "Backend Developer",
+    "position": "Software Engineer",
     "company": "FPT Telecom",
     "href": "https://fpt.vn/vi",
-    "description": "Built the system branches nationwide use for telecom contract transactions (new contracts, address and plan changes), then rebuilt it as microservices on .NET 6 with Kafka and Redis. Wrote shared libraries for logging, caching, and data access, kept every SQL Server query under 20 seconds on large datasets, and hardened the APIs against SQL injection and request flooding.",
+    "description": "Built the system branches nationwide use for telecom contract transactions (new contracts, address and plan changes), working across backend and frontend, then helped rebuild it as microservices on .NET 6, Kafka, and Redis in a 5-person team. Every query had to finish within the DBA team’s 20-second timeout on telecom-scale data, so I tuned complex SQL Server queries and moved business rules into stored procedures that could change without a rebuild. Also wrote shared libraries for logging, caching, and data access, and hardened the APIs against SQL injection and request flooding.",
     "tags": [
       {
         "title": "ASP.NET MVC"
