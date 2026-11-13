@@ -25,7 +25,7 @@
     "imgUrl": "./assets/images/fms.svg",
     "title": "FMS",
     "madeAt": "GreenFeed",
-    "description": "The system that runs daily operations at GreenFeed’s 32 pig farms for about 1,000 users, from production and planning to sales and transport. I was one of three engineers on the Sales module, which turns a weighed pig into an order, a price, and an e-invoice (around 130 a day) and hands the final transaction to SAP. Prices come from each pig’s actual weight, and stock and pig status update the moment a sale closes.",
+    "description": "The system that runs daily operations at GreenFeed’s 32 pig farms for about 1,000 users, from production and planning to sales and transport. I was one of three engineers on the Sales module, which turns a weighed pig into an order, a price, and an e-invoice (around 130 a day) and hands the final transaction to SAP. Unit prices come from SAP and weights straight from the scale software, replacing Excel sheets and paper slips, and stock and pig status update the moment a sale closes.",
     "tags": [
       {
         "title": ".NET"

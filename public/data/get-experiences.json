@@ -52,10 +52,9 @@
     ],
     "highlights": [
       "Built the Sales module of FMS, the system running 32 pig farms for about 1,000 users, in a 14-person team (3 on Sales).",
-      "Implemented order intake, assigning pigs to orders, and the weighing flow.",
-      "Automated pricing and payment from each pig’s actual weight and unit price.",
+      "Replaced Excel sheets and paper slips with one digital flow from order to e-invoice: unit prices pulled from SAP and weights read directly from the automatic scale software.",
+      "Calculated price and payment from each pig’s actual weight and issued around 130 e-invoices a day with no invoicing errors, sending final transactions back to SAP.",
       "Synced stock and pig status with the inventory and pig-status modules in real time.",
-      "Issued e-invoices (around 130 a day) and handed final transactions to SAP.",
       "Built background workers that sync orders from Odoo to Solomon, 1,000–2,000 transactions a day."
     ]
   },
@@ -143,7 +142,8 @@
     "highlights": [
       "Transaction Counter (2-person team, backend and frontend): contract transactions for 70 branches, including new contracts, address changes, and internet plan changes.",
       "Split the system into SOA modules and built the UI with jQuery and Kendo UI in a module pattern.",
-      "Moved business rules into stored procedures so they could change without a rebuild, keeping every query inside the DBA team’s 20-second timeout on large datasets.",
+      "Moved business rules into stored procedures so they could change without a rebuild, and kept every query inside the DBA team’s 20-second timeout on telecom-scale data: filter before joining, no per-row functions in filters, and dedicated day, month, and year columns where they kept queries fast.",
+      "Raised bulk-insert capacity from about 10,000 to 140,000 rows per batch by passing XML lists straight into SQL Server stored procedures, a technique I later reused at VietCredit and GreenFeed.",
       "Applied CSOC security rules: SQL injection prevention, role-aware error handling, and request rate limiting.",
       "Wrote a shared helper library for queries, logging, rate limiting, HTTP calls, and exception handling.",
       "Service Request Transaction (5-person team): helped rebuild it on .NET 6 microservices with Redis caching, logs shipped through Kafka to Kibana, and a React, TypeScript, and Redux Toolkit UI built from Figma designs."
