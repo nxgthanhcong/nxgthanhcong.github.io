@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import parse from "html-react-parser";
 import { SectionError, SectionSkeleton, ViewMore } from "../components";
 import {
@@ -7,6 +7,7 @@ import {
   useResumeQuery,
 } from "../stores/services/portfolio-api";
 import { isExternalUrl } from "../utils/url";
+import { useDocumentTitle } from "../hooks";
 
 const NAME = "Nguyen Thanh Cong";
 
@@ -19,13 +20,7 @@ const Resume = () => {
   const experiences = useExperiencesQuery();
   const education = useEducationQuery();
 
-  useEffect(() => {
-    const previous = document.title;
-    document.title = `Resume – ${NAME}`;
-    return () => {
-      document.title = previous;
-    };
-  }, []);
+  useDocumentTitle(`Resume – ${NAME}`);
 
   const queries = [resume, experiences, education];
   const loading = queries.some((q) => q.isUninitialized || q.isLoading);

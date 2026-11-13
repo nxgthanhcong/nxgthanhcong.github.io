@@ -9,9 +9,10 @@ import {
   IntroduceSection,
   ProjectsSection,
 } from "../sections";
-import { useScrollToHash } from "../hooks";
+import { useDocumentTitle, useScrollToHash } from "../hooks";
 
 const Home = () => {
+  useDocumentTitle("Nguyen Thanh Cong");
   useScrollToHash();
 
   return (

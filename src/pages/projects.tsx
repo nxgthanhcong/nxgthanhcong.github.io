@@ -10,8 +10,10 @@ import { TwoOClockArrowIcon } from "../assets/icons";
 import { useProjectsQuery } from "../stores/services/portfolio-api";
 import { getExternalHostname } from "../utils/url";
 import { sortByYearDesc } from "../utils/sort";
+import { useDocumentTitle } from "../hooks";
 
 const Projects = () => {
+  useDocumentTitle("Projects – Nguyen Thanh Cong");
   const { isLoading, isUninitialized, isError, data } = useProjectsQuery({
     page: 1,
     limit: 2,
