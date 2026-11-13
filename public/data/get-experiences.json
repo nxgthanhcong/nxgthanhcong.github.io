@@ -64,6 +64,7 @@
     "endDate": "Present",
     "position": "Full-Stack Developer",
     "company": "Freelance",
+    "freelance": true,
     "description": "Building e-commerce sites and Telegram bots for individual clients, end to end: backend, frontend, and deployment on a VPS with Docker. The largest so far is DBL Store.",
     "tags": [
       {

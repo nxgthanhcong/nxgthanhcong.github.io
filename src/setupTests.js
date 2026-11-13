@@ -110,6 +110,15 @@ export const fixtures = {
       description: "Test experience description",
       tags: [{ title: "TypeScript" }],
     },
+    {
+      startDate: "2023",
+      endDate: "Present",
+      position: "Full-Stack Developer",
+      company: "Freelance",
+      freelance: true,
+      description: "Test freelance description",
+      highlights: ["Test freelance highlight"],
+    },
   ],
   "get-resume.json": {
     title: "Software Engineer",

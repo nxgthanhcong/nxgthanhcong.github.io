@@ -4,7 +4,7 @@ import { createMemoryRouter, RouterProvider } from "react-router-dom";
 import { store } from "../stores";
 import Resume from "./resume";
 
-test("renders the résumé from the shared data", async () => {
+test("renders the resume from the shared data", async () => {
   const router = createMemoryRouter([{ path: "/resume", element: <Resume /> }], {
     initialEntries: ["/resume"],
   });
@@ -18,6 +18,15 @@ test("renders the résumé from the shared data", async () => {
     await screen.findByRole("heading", { level: 1, name: "Nguyen Thanh Cong" })
   ).toBeInTheDocument();
   expect(screen.getByText("Test resume summary")).toBeInTheDocument();
+  // HR scan order: summary, skills, jobs, freelance, education
+  expect(screen.getAllByRole("heading", { level: 2 }).map((h) => h.textContent)).toEqual([
+    "Summary",
+    "Skills",
+    "Experience",
+    "Freelance",
+    "Education & certificates",
+  ]);
+  expect(screen.getByText("Test freelance highlight")).toBeInTheDocument();
   expect(screen.getByText("Test highlight one")).toBeInTheDocument();
   expect(screen.getByText("C#, .NET")).toBeInTheDocument();
   expect(screen.getByRole("link", { name: "test@example.com" })).toHaveAttribute(

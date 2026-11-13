@@ -62,7 +62,7 @@ code {
     monospace;
 }
 
-/* ==================== PRINT (résumé) ================= */
+/* ==================== PRINT (resume) ================= */
 @media print {
   @page {
     size: A4;
