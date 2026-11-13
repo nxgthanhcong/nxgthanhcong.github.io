@@ -1,13 +1,13 @@
 import React from "react";
 import parse from "html-react-parser";
-import { ItemTitle, SectionTitle } from "../components";
+import { ItemTitle, SectionSkeleton, SectionTitle } from "../components";
 import { useEducationQuery } from "../stores/services/portfolio-api";
 
 const Education = () => {
   const { isLoading, isUninitialized, isError, data } = useEducationQuery();
 
   if (isUninitialized || isLoading) {
-    return <span>loading...</span>;
+    return <SectionSkeleton lines={2} />;
   }
 
   if (isError || data.length === 0) {

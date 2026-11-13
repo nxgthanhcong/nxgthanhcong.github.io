@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import {
   ItemTitle,
   LinkList,
+  SectionError,
+  SectionSkeleton,
   SectionTitle,
   TagList,
   ViewMore,
@@ -17,11 +19,11 @@ const Experiences = () => {
   useIsActiveNavigationHook(ref, data != null);
 
   if (isUninitialized || isLoading) {
-    return <span>loading...</span>;
+    return <SectionSkeleton lines={6} />;
   }
 
   if (isError) {
-    return <span>some thing went wrong</span>;
+    return <SectionError />;
   }
 
   const experienceDataItems = data;

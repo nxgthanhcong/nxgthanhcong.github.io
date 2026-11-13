@@ -1,6 +1,6 @@
 import parse from "html-react-parser";
 import React, { useRef } from "react";
-import { SectionTitle } from "../components";
+import { SectionError, SectionSkeleton, SectionTitle } from "../components";
 import { useAboutInfomationQuery } from "../stores/services/portfolio-api";
 import { useIsActiveNavigationHook } from "../hooks";
 
@@ -12,11 +12,11 @@ const About = () => {
   useIsActiveNavigationHook(ref, data != null);
 
   if (isUninitialized || isLoading) {
-    return <span>loading...</span>;
+    return <SectionSkeleton lines={4} />;
   }
 
   if (isError) {
-    return <span>some thing went wrong</span>;
+    return <SectionError />;
   }
 
   const { content } = data;

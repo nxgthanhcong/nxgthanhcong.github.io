@@ -1,5 +1,11 @@
 import React from "react";
-import { Container, TagList, ViewMore } from "../components";
+import {
+  Container,
+  SectionError,
+  SectionSkeleton,
+  TagList,
+  ViewMore,
+} from "../components";
 import { TwoOClockArrowIcon } from "../assets/icons";
 import { useProjectsQuery } from "../stores/services/portfolio-api";
 import { getExternalHostname } from "../utils/url";
@@ -12,11 +18,11 @@ const Projects = () => {
   });
 
   if (isUninitialized || isLoading) {
-    return <span>loading...</span>;
+    return <SectionSkeleton lines={5} />;
   }
 
   if (isError) {
-    return <span>some thing went wrong</span>;
+    return <SectionError />;
   }
 
   const projectDataItems = sortByYearDesc(data);

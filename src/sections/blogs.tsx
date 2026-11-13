@@ -1,5 +1,11 @@
 import React, { useRef, useState } from "react";
-import { ItemTitle, SectionTitle, ViewMore } from "../components";
+import {
+  ItemTitle,
+  SectionError,
+  SectionSkeleton,
+  SectionTitle,
+  ViewMore,
+} from "../components";
 import { useIsActiveNavigationHook } from "../hooks";
 import { useBlogsQuery } from "../stores/services/portfolio-api";
 
@@ -15,11 +21,11 @@ const BlogsSection = () => {
   useIsActiveNavigationHook(ref, data != null);
 
   if (isUninitialized || isLoading) {
-    return <span>loading...</span>;
+    return <SectionSkeleton lines={3} />;
   }
 
   if (isError) {
-    return <span>some thing went wrong</span>;
+    return <SectionError />;
   }
 
   const blogDataItems = data;
