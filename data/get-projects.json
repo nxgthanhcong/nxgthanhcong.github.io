@@ -1,9 +1,10 @@
 [
   {
     "year": 2026,
+    "imgUrl": "./assets/images/fms-aqua.svg",
     "title": "FMS Aqua",
     "madeAt": "Excel Technologies",
-    "description": "A multi-farm management system for GreenFeed’s fish farms, covering production management, planning, materials management (MM), feed and supply inventory, and Solomon integration, with a reconciliation view that checks every warehouse issue against what each pond actually consumed. Built with Claude Code as a core part of the workflow.",
+    "description": "The management system behind GreenFeed’s fish farms, in daily use across about 40 ponds since September 2026. It covers production, planning, materials, and feed and supply inventory, and integrates with Solomon. Its reconciliation view checks every warehouse issue against what each pond actually consumed, so gaps show up the same day.",
     "tags": [
       {
         "title": ".NET"
@@ -21,9 +22,10 @@
   },
   {
     "year": 2025,
+    "imgUrl": "./assets/images/fms.svg",
     "title": "FMS",
     "madeAt": "GreenFeed",
-    "description": "A multi-farm management system for GreenFeed’s pig farms, covering production, planning, materials management, orders, sales and delivery, transportation, and e-invoicing, integrated with SAP. I built the Sales module: assigning pigs to orders, the weighing flow, weight-based pricing and payments, and real-time sync with inventory and pig status.",
+    "description": "The system that runs daily operations at GreenFeed’s 32 pig farms for about 1,000 users, from production and planning to sales and transport. I was one of three engineers on the Sales module, which turns a weighed pig into an order, a price, and an e-invoice (around 130 a day) and hands the final transaction to SAP. Prices come from each pig’s actual weight, and stock and pig status update the moment a sale closes.",
     "tags": [
       {
         "title": ".NET"
@@ -40,25 +42,29 @@
     ]
   },
   {
-    "year": 2023,
-    "title": "Service Request Transaction",
+    "year": 2022,
+    "imgUrl": "./assets/images/transaction-counter.svg",
+    "title": "Transaction Counter",
     "madeAt": "FPT Telecom",
-    "description": "A microservice rebuild of the system FPT Telecom branches use for contract transactions, in a 5-person team. I worked across backend and frontend: APIs with structured logging, a shared library for logging, security, and data access, Redis caching, and React screens built from Figma designs.",
+    "description": "The counter system 70 FPT Telecom branches use for contract transactions (new contracts, address changes, and internet plan changes), around 200–300 a day. In a two-person team I built backend and frontend and moved business rules into stored procedures, so they could change without a rebuild and every query stayed inside the DBA team’s 20-second timeout on telecom-scale data. Later I helped rebuild it on .NET 6 microservices with Redis caching and logs shipped through Kafka to Kibana.",
     "tags": [
       {
-        "title": ".NET 6"
+        "title": "ASP.NET MVC"
       },
       {
-        "title": "Kafka"
+        "title": "SQL Server"
+      },
+      {
+        "title": "jQuery"
+      },
+      {
+        "title": ".NET 6"
       },
       {
         "title": "Redis"
       },
       {
         "title": "React"
-      },
-      {
-        "title": "TypeScript"
       }
     ]
   },
@@ -68,7 +74,7 @@
     "title": "DBL Store",
     "madeAt": "Freelance",
     "href": "https://dblstore.net/",
-    "description": "An online store for Dragon Ball Legends game accounts: customers sign in with Google, top up points, pick an account within their budget, and receive it instantly. Built end to end, from the storefront and API to deployment.",
+    "description": "An online store for Dragon Ball Legends game accounts with 800 users and 1,433 orders so far. I built it end to end, from the storefront and API to deployment on a VPS with Docker. Customers sign in with Google, top up points, pick an account within their budget, and receive it instantly.",
     "tags": [
       {
         "title": "Next.js"
