@@ -1,0 +1,73 @@
+{
+  "title": "Software Engineer",
+  "location": "Ho Chi Minh City, Vietnam",
+  "contacts": [
+    {
+      "label": "nxgthanhcongcommunity@gmail.com",
+      "href": "mailto:nxgthanhcongcommunity@gmail.com"
+    },
+    {
+      "label": "github.com/nxgthanhcong",
+      "href": "https://github.com/nxgthanhcong"
+    },
+    {
+      "label": "nxgthanhcong.github.io",
+      "href": "https://nxgthanhcong.github.io"
+    }
+  ],
+  "summary": "Backend-focused software engineer with 4+ years of experience building reliable, secure systems for telecom, finance, and agriculture. I work mostly in .NET with SQL Server and PostgreSQL, care most about query performance, clean APIs, security, and system integration, and ship the frontend in React when a feature needs it end to end.",
+  "skills": [
+    {
+      "group": "Backend",
+      "items": [
+        "C#",
+        ".NET / ASP.NET Core",
+        "ASP.NET MVC",
+        "ServiceStack",
+        "NestJS",
+        "REST APIs"
+      ]
+    },
+    {
+      "group": "Databases",
+      "items": [
+        "SQL Server",
+        "PostgreSQL",
+        "MySQL",
+        "Redis"
+      ]
+    },
+    {
+      "group": "Frontend",
+      "items": [
+        "React",
+        "TypeScript",
+        "Next.js",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "jQuery"
+      ]
+    },
+    {
+      "group": "Integration & infra",
+      "items": [
+        "SAP",
+        "Solomon",
+        "Odoo",
+        "MoMo",
+        "Kafka",
+        "Elasticsearch / Kibana",
+        "Docker"
+      ]
+    },
+    {
+      "group": "Tools",
+      "items": [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Claude Code"
+      ]
+    }
+  ]
+}

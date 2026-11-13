@@ -61,3 +61,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* ==================== PRINT (résumé) ================= */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+  html,
+  body,
+  #root,
+  #root > div {
+    background: #fff !important;
+  }
+  #root > div {
+    padding: 0 !important;
+  }
+  .cursor-overlay {
+    display: none !important;
+  }
+  /* highlights in the JSON use light text colours; keep everything readable on paper */
+  .resume-print,
+  .resume-print * {
+    color: #1e293b !important;
+  }
+  .resume-print h1,
+  .resume-print h2,
+  .resume-print h3,
+  .resume-print dt {
+    color: #0f172a !important;
+  }
+}

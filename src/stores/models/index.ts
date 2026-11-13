@@ -5,3 +5,4 @@ export type { default as ILink } from "./link";
 export type { default as IProject } from "./projects";
 export type { default as IBlog } from "./blogs";
 export type { default as IEducation } from "./education";
+export type { default as IResume } from "./resume";

@@ -106,10 +106,18 @@ export const fixtures = {
       position: "Software Engineer",
       company: "Test Experience Co",
       href: "https://example.com/",
+      highlights: ["Test highlight one", "Test highlight two"],
       description: "Test experience description",
       tags: [{ title: "TypeScript" }],
     },
   ],
+  "get-resume.json": {
+    title: "Software Engineer",
+    location: "Test City",
+    contacts: [{ label: "test@example.com", href: "mailto:test@example.com" }],
+    summary: "Test resume summary",
+    skills: [{ group: "Backend", items: ["C#", ".NET"] }],
+  },
   "get-education.json": [
     {
       kind: "College",

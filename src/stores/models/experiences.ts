@@ -8,6 +8,8 @@ export default interface IExperience {
   // Company website; makes the title a link when it is an absolute URL.
   href?: string;
   description: string;
+  // Résumé bullets (shown on /resume only).
+  highlights?: string[];
   tags?: ITag[];
   links?: ILink[];
 }
