@@ -1,7 +1,7 @@
 import React from "react";
 
 const SectionTitle = ({ title }: { title: string }) => {
-  return <h1 className="section__title">{title}</h1>;
+  return <h2 className="section__title">{title}</h2>;
 };
 
 export default SectionTitle;

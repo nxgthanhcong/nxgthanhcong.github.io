@@ -28,7 +28,7 @@ const Introduce = () => {
         className="mb-6 h-24 w-24 rounded-full object-cover ring-2 ring-slate-200/10 lg:h-28 lg:w-28 lg:short:mb-4 lg:short:h-20 lg:short:w-20"
       />
       <h1 className="text-6xl font-bold text-slate-200">Nguyen Thanh Cong</h1>
-      <h2 className="mt-3 text-2xl font-medium text-slate-200">
+      <p className="mt-3 text-2xl font-medium text-slate-200">
         {role}
         {companyName && (
           <>
@@ -37,7 +37,7 @@ const Introduce = () => {
             {companyName}
           </>
         )}
-      </h2>
+      </p>
       <p className="mt-4 max-w-md text-xl text-slate-400 lg:max-w-[70%]">{parse(description)}</p>
     </>
   );
