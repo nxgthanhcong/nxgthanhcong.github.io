@@ -22,7 +22,7 @@
     ],
     "highlights": [
       "Building FMS Aqua, the management system for GreenFeed’s fish farms, as an outsourced project; in daily use across about 40 ponds since September 2026.",
-      "Built the warehouse integration and the reconciliation view that checks every warehouse issue against what each pond actually consumed.",
+      "Built the warehouse integration and a daily reconciliation that compares feed and supplies issued with what each pond actually used, so over-issue or over-use shows up the same day instead of at stock count.",
       "Use Claude Code as the core of how I design, implement, and review features."
     ]
   },
