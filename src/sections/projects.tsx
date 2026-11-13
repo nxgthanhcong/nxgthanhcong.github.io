@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import {
+  ImageLightbox,
   ItemTitle,
   LinkList,
   SectionError,
@@ -14,6 +15,9 @@ import { sortByYearDesc } from "../utils/sort";
 
 const Projects = () => {
   const [activedIndex, setActivedIndex] = useState(-1);
+  const [zoomed, setZoomed] = useState<{ src: string; alt: string } | null>(
+    null
+  );
 
   const { isLoading, isUninitialized, isError, data } = useProjectsQuery({
     page: 1,
@@ -56,12 +60,24 @@ const Projects = () => {
           >
             <div className="col-span-3 lg:col-span-2">
               {item.imgUrl ? (
-                <img
-                  className="bg-[rgba(255, 255, 255, 0.15)] rounded border-2 border-solid border-[rgba(255,255,255,0.1)]"
-                  src={item.imgUrl}
-                  alt={`${item.title} preview`}
-                  width="120px"
-                />
+                <button
+                  type="button"
+                  className="block cursor-zoom-in rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-300"
+                  aria-label={`Enlarge ${item.title} preview`}
+                  onClick={() =>
+                    setZoomed({
+                      src: item.imgUrl as string,
+                      alt: `${item.title} preview`,
+                    })
+                  }
+                >
+                  <img
+                    className="bg-[rgba(255, 255, 255, 0.15)] rounded border-2 border-solid border-[rgba(255,255,255,0.1)] transition duration-200 hover:border-[rgba(94,234,212,0.5)]"
+                    src={item.imgUrl}
+                    alt={`${item.title} preview`}
+                    width="120px"
+                  />
+                </button>
               ) : (
                 // In-house systems have no public screenshot: show a neutral
                 // tile of the same size so the list stays balanced.
@@ -103,6 +119,13 @@ const Projects = () => {
         ))}
       </ul>
       <ViewMore.IconRightSide url="/projects" title="View all projects" />
+      {zoomed && (
+        <ImageLightbox
+          src={zoomed.src}
+          alt={zoomed.alt}
+          onClose={() => setZoomed(null)}
+        />
+      )}
     </div>
   );
 };
