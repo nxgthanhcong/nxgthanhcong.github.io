@@ -5,7 +5,7 @@
     "position": "Software Engineer",
     "company": "Excel Technologies",
     "href": "https://exceltech.vn/",
-    "description": "Building the fish farm management system for GreenFeed as an outsourced project, including its warehouse integration, with Claude Code at the center of the development workflow.",
+    "description": "Building FMS Aqua, GreenFeed’s fish farm management system, as an outsourced project, including its warehouse integration, with Claude Code at the center of how I design, build, and review.",
     "tags": [
       {
         "title": ".NET"
@@ -27,7 +27,7 @@
     "position": "Software Engineer",
     "company": "GreenFeed",
     "href": "https://www.greenfeed.com.vn/",
-    "description": "Built the Sales module of FMS, the system that runs GreenFeed’s 32 pig farms (14-person team, 3 on Sales): pig selection and weighing, orders, weight-based pricing and payments, real-time sync with inventory and pig status, and issuing e-invoices, with the final transactions sent on to SAP. Background workers sync orders from Odoo to Solomon and process 1,000–2,000 transactions a day.",
+    "description": "Built the Sales module of FMS, the company’s pig farm management system, in a 14-person team: everything from a weighed pig to an order, a price, and an e-invoice. Also built the background workers that sync orders from Odoo to Solomon, 1,000–2,000 transactions a day.",
     "tags": [
       {
         "title": ".NET"
@@ -51,7 +51,7 @@
     "endDate": "Present",
     "position": "Full-Stack Developer",
     "company": "Freelance",
-    "description": "Building e-commerce sites and Telegram bots for individual clients, end to end: backend, frontend, and deployment on a VPS with Docker.",
+    "description": "Building e-commerce sites and Telegram bots for individual clients, end to end: backend, frontend, and deployment on a VPS with Docker. The largest so far is DBL Store.",
     "tags": [
       {
         "title": "NestJS"
@@ -95,7 +95,7 @@
     "position": "Software Engineer",
     "company": "FPT Telecom",
     "href": "https://fpt.vn/vi",
-    "description": "Built the system branches nationwide use for telecom contract transactions (new contracts, address and plan changes), working across backend and frontend, then helped rebuild it on .NET 6 microservices in a 5-person team, with Redis caching and logs shipped through Kafka to Kibana. Every query had to finish within the DBA team’s 20-second timeout on telecom-scale data, so I tuned complex SQL Server queries and moved business rules into stored procedures that could change without a rebuild. Also wrote shared libraries for logging, caching, and data access, and hardened the APIs against SQL injection and request flooding.",
+    "description": "Built and maintained Transaction Counter, the system branches use for telecom contract transactions, across backend and frontend, then helped rebuild it on .NET 6 microservices in a 5-person team. Along the way I wrote shared libraries for logging, caching, and data access, and hardened the APIs against SQL injection and request flooding.",
     "tags": [
       {
         "title": "ASP.NET MVC"
