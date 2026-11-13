@@ -3,7 +3,7 @@
     "kind": "College",
     "title": "Cao Thang Technical College",
     "href": "https://caothang.edu.vn/",
-    "description": "Graduated with excellent grades, with scholarships in semesters 3, 4, and 5."
+    "description": "Graduated with <span class=\"font-medium text-slate-200\">excellent grades</span>, with <span class=\"font-medium text-slate-200\">scholarships</span> in semesters 3, 4, and 5."
   },
   {
     "kind": "Certificate",

@@ -23,7 +23,7 @@ Create React App 5 (`react-scripts` 5.0.1), TypeScript 4.9 (strict), Tailwind 3,
 - Files: `get-about-infomation.json`, `get-current-job-infomation.json`, `get-experiences.json`, `get-education.json`, `get-projects.json`, `get-blogs.json`. With `npm start` running, saving one of them reloads http://localhost:4000 automatically; the live site updates after the push to `master` deploys.
 - API: `src/stores/services/portfolio-api.ts` (exported as `portfolioApi`, registered in `src/stores/index.ts`).
 - Interfaces in `src/stores/models/` must match the JSON shape.
-- `about.content`, current job `description` and `links[].icon` are HTML strings rendered with `html-react-parser`.
+- `about.content`, current job `description`, education `description` and `links[].icon` are HTML strings rendered with `html-react-parser`.
 - The old `what-is-database` branch is no longer read by the site.
 - Tests mock `fetch` with fixtures in `src/setupTests.js`; update them when the JSON shape changes.
 - Header social icons come from `src/constants/social.ts`; an empty URL hides that icon.

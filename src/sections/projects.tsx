@@ -52,21 +52,41 @@ const Projects = () => {
             onMouseEnter={() => setActivedIndex(index)}
             onMouseLeave={() => setActivedIndex(-1)}
           >
-            <div
-              className={
-                // Keep the column on desktop so titles stay aligned; collapse it on mobile.
-                item.imgUrl
-                  ? "col-span-3 lg:col-span-2"
-                  : "hidden lg:col-span-2 lg:block"
-              }
-            >
-              {item.imgUrl && (
+            <div className="col-span-3 lg:col-span-2">
+              {item.imgUrl ? (
                 <img
                   className="bg-[rgba(255, 255, 255, 0.15)] rounded border-2 border-solid border-[rgba(255,255,255,0.1)]"
                   src={item.imgUrl}
                   alt={`${item.title} screenshot`}
                   width="120px"
                 />
+              ) : (
+                // In-house systems have no public screenshot: show a neutral
+                // tile of the same size so the list stays balanced.
+                <div
+                  className="flex aspect-video w-[120px] flex-col items-center justify-center gap-1 rounded border-2 border-solid border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.03)] text-slate-500"
+                  role="img"
+                  aria-label={`${item.title}: internal system, no public screenshot`}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="h-6 w-6"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z"
+                    />
+                  </svg>
+                  <span className="text-[10px] font-semibold uppercase tracking-widest">
+                    Internal
+                  </span>
+                </div>
               )}
             </div>
             <div className="col-span-6 -order-1 lg:order-none">

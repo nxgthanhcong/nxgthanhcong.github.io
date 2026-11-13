@@ -1,4 +1,5 @@
 import React from "react";
+import parse from "html-react-parser";
 import { ItemTitle, SectionTitle } from "../components";
 import { useEducationQuery } from "../stores/services/portfolio-api";
 
@@ -31,7 +32,7 @@ const Education = () => {
               <ItemTitle title={item.title} href={item.href} />
               {item.description && (
                 <p className="mt-3 text-lg leading-5 text-slate-400">
-                  {item.description}
+                  {parse(item.description)}
                 </p>
               )}
             </div>

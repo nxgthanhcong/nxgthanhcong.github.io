@@ -115,7 +115,7 @@ export const fixtures = {
       kind: "College",
       title: "Test College",
       href: "https://college.example/",
-      description: "Test education description",
+      description: "Test <span>education</span> description",
     },
   ],
   "get-projects.json": [

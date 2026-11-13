@@ -25,6 +25,9 @@ test("renders the home page with data from the github db", async () => {
   expect(await screen.findByText("Internal Project")).toBeInTheDocument();
   expect(screen.getByAltText("Test Project screenshot")).toBeInTheDocument();
   expect(screen.queryByAltText("Internal Project screenshot")).toBeNull();
+  expect(
+    screen.getByRole("img", { name: /Internal Project: internal system/ })
+  ).toBeInTheDocument();
   expect(await screen.findByText("Test Blog Post")).toBeInTheDocument();
   expect(window.fetch).toHaveBeenCalled();
 });
