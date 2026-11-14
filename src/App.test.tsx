@@ -28,6 +28,7 @@ test("renders the home page with data from the github db", async () => {
   expect(
     screen.getByRole("img", { name: /Internal Project: internal system/ })
   ).toBeInTheDocument();
-  expect(await screen.findByText("Test Blog Post")).toBeInTheDocument();
+  // No posts yet: Blogs shows a coming-soon note instead of an empty list.
+  expect(await screen.findByText("Coming soon")).toBeInTheDocument();
   expect(window.fetch).toHaveBeenCalled();
 });

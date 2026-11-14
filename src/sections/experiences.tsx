@@ -72,7 +72,7 @@ const Experiences = () => {
           </li>
         ))}
       </ul>
-      <ViewMore.IconRightSide url="/resume" title="View full resume" />
+      <ViewMore.Primary url="/resume" title="View full resume" />
     </div>
   );
 };

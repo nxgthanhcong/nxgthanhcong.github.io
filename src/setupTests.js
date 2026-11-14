@@ -153,14 +153,7 @@ export const fixtures = {
       description: "No image, no link",
     },
   ],
-  "get-blogs.json": [
-    {
-      href: "/",
-      imgUrl: "./assets/images/spotify.webp",
-      createDate: "Jan 2023",
-      title: "Test Blog Post",
-    },
-  ],
+  "get-blogs.json": [],
 };
 
 beforeEach(() => {

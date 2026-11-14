@@ -27,6 +27,7 @@ Create React App 5 (`react-scripts` 5.0.1), TypeScript 4.9 (strict), Tailwind 3,
 - The old `what-is-database` branch is no longer read by the site.
 - Tests mock `fetch` with fixtures in `src/setupTests.js`; update them when the JSON shape changes.
 - `/resume` (`src/pages/resume.tsx`) is the web resume: header, summary and skills from `get-resume.json`, jobs from `get-experiences.json` (`highlights` are its bullets), education from `get-education.json`. "Print / Save as PDF" uses the `@media print` rules in `src/index.css` (A4, black on white).
+- `get-blogs.json` is `[]` for now: the Blogs section shows a "Coming soon" note until it has entries.
 - Header social icons come from `src/constants/social.ts`; an empty URL hides that icon.
 
 ## Deploy

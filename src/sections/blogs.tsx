@@ -4,7 +4,6 @@ import {
   SectionError,
   SectionSkeleton,
   SectionTitle,
-  ViewMore,
 } from "../components";
 import { useIsActiveNavigationHook } from "../hooks";
 import { useBlogsQuery } from "../stores/services/portfolio-api";
@@ -28,7 +27,30 @@ const BlogsSection = () => {
     return <SectionError />;
   }
 
-  const blogDataItems = data;
+  const blogDataItems = data ?? [];
+
+  // No posts yet: say so instead of showing placeholder articles. Adding
+  // entries to public/data/get-blogs.json brings the list back.
+  if (blogDataItems.length === 0) {
+    return (
+      <div ref={ref} id="blogs" data-item="blogs" className="v2-section mt-32">
+        <SectionTitle title="BLOGS" />
+        <div className="rounded-lg border border-dashed border-slate-300/20 p-6 lg:p-8">
+          <span className="inline-flex items-center gap-2 rounded-full bg-teal-400/10 px-3 py-1 text-sm font-medium text-teal-300">
+            <span className="h-2 w-2 animate-pulse rounded-full bg-teal-300" aria-hidden="true" />
+            Coming soon
+          </span>
+          <p className="mt-4 text-lg text-slate-400">
+            I’m writing up notes from real projects:{" "}
+            <span className="font-medium text-slate-200">
+              SQL performance, system integration, and building with Claude Code
+            </span>
+            . The first posts are on the way.
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div ref={ref} id="blogs" data-item="blogs" className="v2-section mt-32">
@@ -64,7 +86,6 @@ const BlogsSection = () => {
           </li>
         ))}
       </ul>
-      <ViewMore.IconRightSide url="/" title="View all blogs" />
     </div>
   );
 };
