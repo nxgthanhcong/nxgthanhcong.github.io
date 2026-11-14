@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import parse from "html-react-parser";
-import { SectionSkeleton } from "../components";
+import { ImageLightbox, SectionSkeleton } from "../components";
 import { useCurrentJobInfomationQuery } from "../stores/services/portfolio-api";
 import { displayCompany } from "../utils/text";
 
 const Introduce = () => {
   const { isLoading, isUninitialized, isError, data } =
     useCurrentJobInfomationQuery();
+  const [photoOpen, setPhotoOpen] = useState(false);
 
   // Photo and name are static, so they render right away; only the role and
   // description wait for the JSON (and are left out if it fails to load).
@@ -46,13 +47,28 @@ const Introduce = () => {
 
   return (
     <>
-      <img
-        src={`${process.env.PUBLIC_URL}/assets/images/profile.webp`}
-        alt="Nguyen Thanh Cong"
-        width={112}
-        height={112}
-        className="mb-6 h-24 w-24 rounded-full object-cover ring-2 ring-slate-200/10 lg:h-28 lg:w-28 lg:short:mb-4 lg:short:h-20 lg:short:w-20"
-      />
+      {/* The round avatar is a head crop; clicking it shows the full portrait. */}
+      <button
+        type="button"
+        onClick={() => setPhotoOpen(true)}
+        aria-label="View full photo"
+        className="mb-6 block cursor-zoom-in rounded-full lg:short:mb-4"
+      >
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/profile.webp`}
+          alt="Nguyen Thanh Cong"
+          width={112}
+          height={112}
+          className="h-24 w-24 rounded-full object-cover ring-2 ring-slate-200/10 transition hover:ring-teal-300/60 lg:h-28 lg:w-28 lg:short:h-20 lg:short:w-20"
+        />
+      </button>
+      {photoOpen && (
+        <ImageLightbox
+          src={`${process.env.PUBLIC_URL}/assets/images/profile-full.webp`}
+          alt="Nguyen Thanh Cong, full photo"
+          onClose={() => setPhotoOpen(false)}
+        />
+      )}
       <h1 className="text-6xl font-bold text-slate-200">Nguyen Thanh Cong</h1>
       {renderJob()}
     </>

@@ -7,7 +7,7 @@ type Props = {
   onClose: () => void;
 };
 
-// Full-size view of a project thumbnail. Rendered into <body> so it is not
+// Full-size view of an image (project thumbnails, the profile photo). Rendered into <body> so it is not
 // affected by the list's hover opacity. Closes on Esc, backdrop click or the
 // close button; returns focus to whatever opened it.
 const ImageLightbox = ({ src, alt, onClose }: Props) => {
