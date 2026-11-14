@@ -35,3 +35,25 @@ test("renders the resume from the shared data", async () => {
   );
   expect(screen.getByRole("button", { name: /Print \/ Save as PDF/ })).toBeInTheDocument();
 });
+
+test("?print=1 opens the print dialog once the resume has loaded", async () => {
+  jest.useFakeTimers();
+  const print = jest.spyOn(window, "print").mockImplementation(() => {});
+  const router = createMemoryRouter([{ path: "/resume", element: <Resume /> }], {
+    initialEntries: ["/resume?print=1"],
+  });
+  render(
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
+  );
+
+  await screen.findByRole("heading", { level: 1, name: "Nguyen Thanh Cong" });
+  jest.advanceTimersByTime(500);
+  expect(print).toHaveBeenCalledTimes(1);
+  // The flag is dropped so a reload doesn't print again.
+  expect(router.state.location.search).toBe("");
+
+  print.mockRestore();
+  jest.useRealTimers();
+});

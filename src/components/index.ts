@@ -9,3 +9,4 @@ export {default as Container} from './container'
 export {default as ItemTitle} from './item-title'
 export { SectionSkeleton, SectionError } from "./section-state";
 export { default as ImageLightbox } from "./image-lightbox";
+export { default as ResumeCta } from "./resume-cta";

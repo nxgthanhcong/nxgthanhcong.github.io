@@ -6,7 +6,7 @@ import {
   SectionSkeleton,
   SectionTitle,
   TagList,
-  ViewMore,
+  ResumeCta,
 } from "../components";
 import { useIsActiveNavigationHook } from "../hooks";
 import { useExperiencesQuery } from "../stores/services/portfolio-api";
@@ -72,7 +72,7 @@ const Experiences = () => {
           </li>
         ))}
       </ul>
-      <ViewMore.Primary url="/resume" title="View full resume" />
+      <ResumeCta />
     </div>
   );
 };

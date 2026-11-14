@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import parse from "html-react-parser";
+import { useSearchParams } from "react-router-dom";
 import { SectionError, SectionSkeleton, ViewMore } from "../components";
 import {
   useEducationQuery,
@@ -25,6 +26,21 @@ const Resume = () => {
   const queries = [resume, experiences, education];
   const loading = queries.some((q) => q.isUninitialized || q.isLoading);
   const failed = queries.some((q) => q.isError);
+
+  // /resume?print=1 (the download button on the home page) opens the print
+  // dialog once the content is on screen, then drops the flag so a reload
+  // doesn't print again.
+  const [searchParams, setSearchParams] = useSearchParams();
+  const printRequested = searchParams.get("print") === "1";
+  const ready = !loading && !failed;
+  const printed = useRef(false);
+  useEffect(() => {
+    if (!printRequested || !ready || printed.current) return;
+    printed.current = true;
+    setSearchParams({}, { replace: true });
+    // Let the content paint before the (blocking) print dialog opens.
+    window.setTimeout(() => window.print(), 300);
+  }, [printRequested, ready, setSearchParams]);
 
   return (
     <div className="mx-auto max-w-3xl py-12 lg:py-20 print:max-w-none print:py-0">
