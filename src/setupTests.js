@@ -98,6 +98,7 @@ export const fixtures = {
   },
   "get-about-infomation.json": {
     content: "<p>About me test content</p>",
+    favoriteWin: "Test favorite win",
   },
   "get-experiences.json": [
     {

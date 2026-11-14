@@ -9,7 +9,11 @@ import {
   TagList,
   ViewMore,
 } from "../components";
-import { useProjectsQuery } from "../stores/services/portfolio-api";
+import parse from "html-react-parser";
+import {
+  useAboutInfomationQuery,
+  useProjectsQuery,
+} from "../stores/services/portfolio-api";
 import { useIsActiveNavigationHook } from "../hooks";
 import { sortByYearDesc } from "../utils/sort";
 
@@ -23,6 +27,9 @@ const Projects = () => {
     page: 1,
     limit: 2,
   });
+
+  // Shared with the About section (same cached request).
+  const about = useAboutInfomationQuery();
 
   const ref = useRef(null);
   useIsActiveNavigationHook(ref, data != null);
@@ -120,6 +127,16 @@ const Projects = () => {
         ))}
       </ul>
       <ViewMore.IconRightSide url="/projects" title="View all projects" />
+      {about.data?.favoriteWin && (
+        <div className="mt-12 border-l-2 border-teal-300/60 pl-5">
+          <p className="text-sm font-semibold uppercase tracking-widest text-teal-300">
+            Favorite win
+          </p>
+          <p className="mt-2 text-lg text-slate-400">
+            {parse(about.data.favoriteWin)}
+          </p>
+        </div>
+      )}
       {zoomed && (
         <ImageLightbox
           src={zoomed.src}
