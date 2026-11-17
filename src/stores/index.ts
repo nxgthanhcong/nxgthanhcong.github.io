@@ -1,14 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { portfolioApi } from "./services";
 import { setupListeners } from "@reduxjs/toolkit/query";
-import appReducer from "./features/appSlice";
 
 export const store = configureStore({
   devTools: true,
   reducer: {
     // Add the generated reducer as a specific top-level slice
     [portfolioApi.reducerPath]: portfolioApi.reducer,
-    app: appReducer,
   },
   // Adding the api middleware enables caching, invalidation, polling,
   // and other useful features of `rtk-query`.

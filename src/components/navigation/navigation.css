@@ -1,9 +1,14 @@
-.nav-item.active .nav-item__indicator {
+/* Hover / keyboard focus look the same as the active item. */
+.nav-item.active .nav-item__indicator,
+.nav-item a:hover .nav-item__indicator,
+.nav-item a:focus-visible .nav-item__indicator {
   background-color: rgb(226 232 240);
   height: 1px;
   width: 64px;
 }
 
-.nav-item.active .nav-item__text {
+.nav-item.active .nav-item__text,
+.nav-item a:hover .nav-item__text,
+.nav-item a:focus-visible .nav-item__text {
   color: rgb(226 232 240);
 }

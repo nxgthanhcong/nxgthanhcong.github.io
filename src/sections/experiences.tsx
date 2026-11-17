@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import {
   ItemTitle,
   LinkList,
@@ -8,15 +8,11 @@ import {
   TagList,
   ResumeCta,
 } from "../components";
-import { useIsActiveNavigationHook } from "../hooks";
 import { useExperiencesQuery } from "../stores/services/portfolio-api";
 
 const Experiences = () => {
   const [activedIndex, setActivedIndex] = useState(-1);
   const { isLoading, isUninitialized, isError, data } = useExperiencesQuery();
-
-  const ref = useRef(null);
-  useIsActiveNavigationHook(ref, data != null);
 
   if (isUninitialized || isLoading) {
     return <SectionSkeleton lines={6} />;
@@ -30,7 +26,7 @@ const Experiences = () => {
 
   return (
     <div
-      ref={ref}
+     
       id="experiences"
       data-item="experiences"
       className="v2-section mt-32"

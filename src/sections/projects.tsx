@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import {
   ImageLightbox,
   ItemTitle,
@@ -14,7 +14,6 @@ import {
   useAboutInfomationQuery,
   useProjectsQuery,
 } from "../stores/services/portfolio-api";
-import { useIsActiveNavigationHook } from "../hooks";
 import { sortByYearDesc } from "../utils/sort";
 
 const Projects = () => {
@@ -31,9 +30,6 @@ const Projects = () => {
   // Shared with the About section (same cached request).
   const about = useAboutInfomationQuery();
 
-  const ref = useRef(null);
-  useIsActiveNavigationHook(ref, data != null);
-
   if (isUninitialized || isLoading) {
     return <SectionSkeleton lines={6} />;
   }
@@ -46,7 +42,7 @@ const Projects = () => {
 
   return (
     <div
-      ref={ref}
+     
       id="projects"
       data-item="projects"
       className="v2-section mt-32"

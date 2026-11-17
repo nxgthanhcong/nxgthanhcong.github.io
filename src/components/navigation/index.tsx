@@ -1,51 +1,28 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React from "react";
 import "./navigation.css";
-import { useSelector } from "react-redux";
-import { RootState } from "../../stores";
+import { useActiveSection } from "../../hooks";
+
+const NAVIGATION_ITEMS = ["about", "experiences", "projects", "blogs"];
 
 const Navigation = () => {
-  const [activedItem, setActivesItem] = useState<string>();
-  const appState = useSelector((state: RootState) => state.app);
-  useEffect(() => {
-    setActivesItem(appState.activedNavigationItem.toLocaleLowerCase());
-  }, [appState.activedNavigationItem]);
-
-  const navigationItems = useMemo(() => {
-    return [
-      {
-        href: "about",
-        description: "about",
-      },
-      {
-        href: "experiences",
-        description: "experiences",
-      },
-      {
-        href: "projects",
-        description: "projects",
-      },
-      {
-        href: "blogs",
-        description: "blogs",
-      },
-    ];
-  }, []);
+  const activeItem = useActiveSection(NAVIGATION_ITEMS);
 
   return (
     <ul className="mt-16 hidden lg:block lg:short:mt-8" id="navigation-menu">
-      {navigationItems.map((item) => (
+      {NAVIGATION_ITEMS.map((item) => (
         <li
-          key={item.href}
-          data-item={item.href}
-          className={"nav-item " + (activedItem === item.href ? "active" : "")}
+          key={item}
+          data-item={item}
+          className={"nav-item " + (activeItem === item ? "active" : "")}
         >
           <a
-            href={`#${item.href}`}
+            href={`#${item}`}
             className="inline-flex items-center gap-x-4 py-3"
+            aria-current={activeItem === item ? "location" : undefined}
           >
-            <span className="nav-item__indicator inline-block h-px w-8 bg-slate-500 duration-200"></span>
-            <span className="nav-item__text text-sm font-semibold uppercase tracking-widest text-slate-400 duration-200">
-              {item.description}
+            <span className="nav-item__indicator inline-block h-px w-8 bg-slate-500 transition-all duration-200"></span>
+            <span className="nav-item__text text-sm font-semibold uppercase tracking-widest text-slate-400 transition-colors duration-200">
+              {item}
             </span>
           </a>
         </li>

@@ -1,11 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import {
   ItemTitle,
   SectionError,
   SectionSkeleton,
   SectionTitle,
 } from "../components";
-import { useIsActiveNavigationHook } from "../hooks";
 import { useBlogsQuery } from "../stores/services/portfolio-api";
 
 const BlogsSection = () => {
@@ -15,9 +14,6 @@ const BlogsSection = () => {
     page: 1,
     limit: 2,
   });
-
-  const ref = useRef(null);
-  useIsActiveNavigationHook(ref, data != null);
 
   if (isUninitialized || isLoading) {
     return <SectionSkeleton lines={3} />;
@@ -33,7 +29,7 @@ const BlogsSection = () => {
   // entries to public/data/get-blogs.json brings the list back.
   if (blogDataItems.length === 0) {
     return (
-      <div ref={ref} id="blogs" data-item="blogs" className="v2-section mt-32">
+      <div id="blogs" data-item="blogs" className="v2-section mt-32">
         <SectionTitle title="BLOGS" />
         <div className="rounded-lg border border-dashed border-slate-300/20 p-6 lg:p-8">
           <span className="inline-flex items-center gap-2 rounded-full bg-teal-400/10 px-3 py-1 text-sm font-medium text-teal-300">
@@ -53,7 +49,7 @@ const BlogsSection = () => {
   }
 
   return (
-    <div ref={ref} id="blogs" data-item="blogs" className="v2-section mt-32">
+    <div id="blogs" data-item="blogs" className="v2-section mt-32">
       <SectionTitle title="BLOGS" />
       <ul id="blog-list">
         {blogDataItems.map((item, index) => (
